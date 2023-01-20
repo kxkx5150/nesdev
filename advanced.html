@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -8,65 +7,126 @@
   <body>
     <div class="tutorialCard mdl-card mdl-shadow--2dp" id="advanced_tutorial-0">
       <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">Advanced Nerdy Nights #1: CHR Bank switching</h2>
+        <h2
+          class="mdl-card__title-text"
+          data-dl-uid="0"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          上級オタクナイト#1：CHRバンクのスイッチング
+        </h2>
       </div>
-      <div class="mdl-card__supporting-text">
-        <span class="Apple-style-span" style="font-weight: bold"
-          ><div>
-            <span class="Apple-style-span" style="font-weight: normal"
-              >To do the advanced lessons you should have already finished Pong.</span
-            >
+      <div
+        class="mdl-card__supporting-text"
+        data-dl-uid="1"
+        data-dl-original="true"
+        data-dl-translated="true"
+      >
+        <span
+          class="Apple-style-span"
+          style="font-weight: bold"
+          data-dl-uid="2"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><div data-dl-uid="3" data-dl-original="true" data-dl-translated="true"></div>
+          <div data-dl-uid="5" data-dl-original="true" data-dl-translated="true">
+            <br data-dl-uid="6" data-dl-original="true" data-dl-translated="true" />
           </div>
-          <div><br /></div>
-          This Week:&nbsp;</span
-        >As you complete a full game you may find the NROM memory limits to be too small. To enable more
-        ROM on carts many forms of "bank switching" were used. This article deals with just one type of
-        CHR switching, used on CNROM carts. CNROM is easy to use and very cheap to manufacture. The
-        <a
+          This Week: </span
+        >ゲームを<span data-dl-uid="2" data-dl-translated="true"
+          ><div data-dl-uid="3" data-dl-translated="true">
+            <span data-dl-uid="4" data-dl-translated="true">やり</span>
+          </div>
+        </span>
+        <span data-dl-uid="2" data-dl-translated="true"
+          ><div data-dl-uid="3" data-dl-translated="true">
+            <span data-dl-uid="4" data-dl-translated="true"></span>
+          </div> </span
+        >こんでいくと、NROM
+        のメモリ制限が小さすぎることに気がつくかもしれません。カートにより多くのROMを搭載するために、多くの「バンクスイッチ」が使用されました。この記事では、CNROMカートで使用されるCHRスイッチングの1つのタイプだけを扱います。CNROMは使いやすく、製造も非常に安価です。<a
           href="https://www.retrousb.com/product_info.php?ref=5&amp;products_id=42&amp;affiliate_banner_id=1"
           target="_blank"
           original-href="http://www.retrousb.com/product_info.php?ref=5&amp;products_id=42&amp;affiliate_banner_id=1"
+          data-dl-uid="7"
+          data-dl-original="true"
+          data-dl-translated="true"
           >ReproPak</a
-        >,
-        <a
+        >、<a
           href="https://www.retrousb.com/product_info.php?ref=5&amp;products_id=34&amp;affiliate_banner_id=1"
           target="_blank"
           original-href="http://www.retrousb.com/product_info.php?ref=5&amp;products_id=34&amp;affiliate_banner_id=1"
+          data-dl-uid="8"
+          data-dl-original="true"
+          data-dl-translated="true"
           >PowerPak</a
-        >, and
-        <a
+        >、<a
           href="https://www.retrousb.com/product_info.php?ref=5&amp;products_id=35&amp;affiliate_banner_id=1"
           target="_blank"
           original-href="http://www.retrousb.com/product_info.php?ref=5&amp;products_id=35&amp;affiliate_banner_id=1"
-          >PowerPak Lite</a
-        >
-        all support CNROM completely so it is easy to get your code running on real hardware. If you are
-        using donor carts you can look up games that use CNROM at
-        <a
+          data-dl-uid="9"
+          data-dl-original="true"
+          data-dl-translated="true"
+          >PowerPak Liteは</a
+        >すべてCNROMを完全にサポートしているので、実際のハードウェアでコードを実行させるのは簡単です。ドナーカートを使用している場合、<a
           href="http://bootgod.dyndns.org:7777/"
           target="_blank"
           original-href="http://bootgod.dyndns.org:7777/"
-          >BootGod's NES Cart Database</a
-        >.<br />
-        <br />
-        <br /><span class="Apple-style-span" style="font-weight: bold"
-          ><span class="Apple-style-span" style="font-size: medium"> CHR Bank Switching</span> </span
-        ><br />
-        Bank switching is exchanging one chunk of ROM for a different chunk, while keeping everything in
-        same address range. It is not making a copy, so it happens instantly. You can switch between
-        different banks whenever you want. The size and memory range of the banks depends on the mapper.
-        For the CNROM mapper used in this article the bank size is 8KB of CHR ROM. The whole 8KB range of
-        PPU memory $0000-1FFF is switched at once. This means the graphics for all background tiles and
-        sprite tiles will be swapped. In your game you may have some tiles duplicated in multiple banks
-        so they do not appear to change on screen. PRG is not bank switched, so it remains at the NROM
-        limit of 32KB.<br />
-        <br />
-        <br /><span class="Apple-style-span" style="font-weight: bold"
-          ><span class="Apple-style-span" style="font-size: medium"> Set Mapper Number</span></span
-        ><br />
-        The first part of adding bank switching is changing the mapper number your .NES file uses. At the
-        top of your code has previously been:<br />
-        <br />
+          data-dl-uid="10"
+          data-dl-original="true"
+          data-dl-translated="true"
+          >BootGodのNESカートデータベースで</a
+        >CNROMを使用するゲームを調べることができます。<br
+          data-dl-uid="11"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="12" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="13" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-weight: bold"
+          data-dl-uid="14"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="15"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            CHRバンクスイッチング</span
+          > </span
+        ><br data-dl-uid="16" data-dl-original="true" data-dl-translated="true" />
+        バンクスイッチとは、すべてを同じアドレス範囲に保ちながら、ROMのあるチャンクを別のチャンクに交換することです。コピーを作成するわけではないので、瞬時に行われます。いつでも好きなときに異なるバンクを切り替えることができます。バンクのサイズとメモリ範囲はマッパーに依存します。
+        この記事で使用したCNROMマッパーの場合、バンクのサイズはCHR
+        ROMの8KBです。PPUメモリ$0000-1FFFの8KBの範囲全体が一度に切り替わります。つまり、すべての背景タイルとスプライトタイルのグラフィックが入れ替わることになります。ゲームでは、いくつかのタイルが複数のバンクに重複しているので、画面上では変化していないように見えるかもしれません。PRGはバンクスイッチされないので、NROMの制限値である32KBのままです。<br
+          data-dl-uid="17"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="18" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="19" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-weight: bold"
+          data-dl-uid="20"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="21"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            マッパーナンバーの設定</span
+          ></span
+        ><br data-dl-uid="22" data-dl-original="true" data-dl-translated="true" />
+        バンク切り替えを追加する最初の部分は、.NESファイルが使用するマッパーナンバーを変更することです。コードの先頭には、以前は<br
+          data-dl-uid="23"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="24" data-dl-original="true" data-dl-translated="true" />
         <p
           style="
             margin-top: 0px;
@@ -75,14 +135,25 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="25"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px"
-            >&nbsp;&nbsp;.inesmap 0 ; mapper 0 = NROM, no bank swapping</span
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="26"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >.inesmap 0 ; mapper 0 = NROM、バンクスワップなし</span
           >
         </p>
-        <br />
-        The new line is:<br />
-        <p></p>
+        <br data-dl-uid="27" data-dl-original="true" data-dl-translated="true" />
+        新しい行は次のとおりです。<br
+          data-dl-uid="28"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <p data-dl-uid="29" data-dl-original="true" data-dl-translated="true"></p>
         <p
           style="
             margin-top: 0px;
@@ -91,40 +162,97 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="30"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px"
-            >&nbsp;&nbsp;.inesmap 3 ; mapper 3 = CNROM, 8KB CHR ROM bank swapping</span
-          >
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="31"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >.inesmap 3 ; mapper 3 = CNROM、8KB CHR ROMバンクスワップ</span
+          >あり
         </p>
-        <br />
-        This line in the header just tells the emulator to use CNROM to play your game. A list of other
-        iNES mapper numbers can be seen at the wiki at
-        <a href="http://nesdevwiki.org/" target="_blank" original-href="http://nesdevwiki.org/"
-          >http://nesdevwiki.org/...</a
-        >. <br />
-        <br />
-        <br /><span class="Apple-style-span" style="font-size: medium"
-          ><span class="Apple-style-span" style="font-weight: bold"> Set CHR Size</span></span
-        ><br />
-        The next part is to increase the size of your CHR ROM. Change the .ineschr value from 1 to 2,
-        showing that there are now two 8KB banks. CNROM can handle 32KB of CHR ROM or four 8KB banks but
-        this example will only use two.<br />
-        <br />
-        <br /><span class="Apple-style-span" style="font-weight: bold"
-          ><span class="Apple-style-span" style="font-size: medium"> Add CHR Data</span></span
-        ><br />
-        The third part adds the data for the next bank into your game. Just make a new .bank statement
-        below your current one for CHR, giving it the next sequential number. In your code when you set
-        which bank to switch to this is the number used. PRG bank numbers are ignored so your original
-        CHR bank will be #0 and the new one will be #1.<br />
-        <br />
-        <br /><span class="Apple-style-span" style="font-weight: bold"
-          ><span class="Apple-style-span" style="font-size: medium"> Bank Switching Code</span></span
-        ><br />
-        The final part it to write your bank switching code. This subroutine will take a bank number in
-        the A register and switch the CHR bank to it immediately. The actual switch is done by writing
-        the desired bank number anywhere in the $8000-FFFF memory range. The cart hardware sees this
-        write and changes the CHR bank.<br />
+        <br data-dl-uid="32" data-dl-original="true" data-dl-translated="true" />
+        ヘッダーのこの行は、エミュレータにCNROMを使ってゲームをプレイするように指示するだけです。他のiNESマッパー番号のリストはwikiのhttp://nesdevwiki.org/.<a
+          href="http://nesdevwiki.org/"
+          target="_blank"
+          original-href="http://nesdevwiki.org/"
+          data-dl-uid="33"
+          data-dl-original="true"
+          data-dl-translated="true"
+          >..</a
+        >で見ることができます。 <br data-dl-uid="34" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="35" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="36" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="37"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><span
+            class="Apple-style-span"
+            style="font-weight: bold"
+            data-dl-uid="38"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            CHRサイズの設定</span
+          ></span
+        ><br data-dl-uid="39" data-dl-original="true" data-dl-translated="true" />
+        次はCHR
+        ROMのサイズを大きくすることです。.ineschrの値を1から2に変更し、8KBのバンクが2つあることを示します。CNROMは32KBのCHR
+        ROMまたは4つの8KBバンクを扱うことができますが、この例では2つだけ使用します。<br
+          data-dl-uid="40"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="41" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="42" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-weight: bold"
+          data-dl-uid="43"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="44"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            CHRデータの追加</span
+          ></span
+        ><br data-dl-uid="45" data-dl-original="true" data-dl-translated="true" />
+        第3部では、次のバンクのデータをゲームに追加します。現在のバンクの下にCHR用の新しい.bankステートメントを作り、次の連番を与えるだけです。コード内で、どのバンクに切り替えるかを設定するときに、この番号が使用されます。PRGのバンク番号は無視されるので、元のCHRバンクは0番で、新しいものは1番になります。<br
+          data-dl-uid="46"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="47" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="48" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-weight: bold"
+          data-dl-uid="49"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="50"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            バンク切替コード</span
+          ></span
+        ><br data-dl-uid="51" data-dl-original="true" data-dl-translated="true" />
+        最後に、バンク切り替えのコードを書きます。このサブルーチンはAレジスタのバンク番号を受け取って、CHRバンクを直ちにその番号に切り替えます。実際の切り替えは、$8000-FFFFのメモリ範囲内の任意のバンク番号を書き込むことで行われます。カート
+        ハードウェアはこの書き込みを見て、CHRバンクを変更します。<br
+          data-dl-uid="52"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
         <p
           style="
             margin-top: 0px;
@@ -133,9 +261,17 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="53"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span class="Apple-style-span" style="font-family: '-webkit-sans-serif'; font-size: 12px"
-            ><br
+          <span
+            class="Apple-style-span"
+            style="font-family: '-webkit-sans-serif'; font-size: 12px"
+            data-dl-uid="54"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><br data-dl-uid="55" data-dl-original="true" data-dl-translated="true"
           /></span>
         </p>
         <p
@@ -146,8 +282,17 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="56"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px">... your game code ...</span>
+          ...<span
+            style="letter-spacing: 0px"
+            data-dl-uid="57"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >あなたのゲームコード</span
+          >...
         </p>
         <p
           style="
@@ -157,9 +302,38 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="58"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px"
-            >&nbsp;&nbsp;LDA #$01 ;;put new bank to use into the A register</span
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="59"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            LDA #$01 ;使用する新しいバンクをAレジスタに</span
+          >入れる
+        </p>
+        <p
+          style="
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font: normal normal normal 10px / normal Monaco;
+          "
+          data-dl-uid="60"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="61"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            JSR Bankswitch ;バンク切り替えコードに飛ぶ</span
           >
         </p>
         <p
@@ -170,9 +344,58 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="62"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px"
-            >&nbsp;&nbsp;JSR Bankswitch ;;jump to bank switching code</span
+          ...<span
+            style="letter-spacing: 0px"
+            data-dl-uid="63"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >あなたのゲームコード</span
+          >...
+        </p>
+        <br data-dl-uid="64" data-dl-original="true" data-dl-translated="true" />
+        <p
+          style="
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font: normal normal normal 10px / normal Monaco;
+          "
+          data-dl-uid="65"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="66"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >Bankswitch</span
+          >です。
+        </p>
+        <p
+          style="
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font: normal normal normal 10px / normal Monaco;
+          "
+          data-dl-uid="67"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="68"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            STA $8000 ;使用する新しい銀行</span
           >
         </p>
         <p
@@ -183,10 +406,44 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="69"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px">... your game code ...</span>
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="70"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            RTS</span
+          >
         </p>
-        <br />
+        <br data-dl-uid="71" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="72" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-weight: bold"
+          data-dl-uid="73"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="74"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            バスコンフリクト</span
+          ></span
+        ><br data-dl-uid="75" data-dl-original="true" data-dl-translated="true" />
+        実際のハードウェア上でコードを実行する場合、1つだけ心配しなければならないことがあります。基本的なマッパーの場合、PRG
+        ROMはリードコマンドとライトコマンドのどちらを受け取ってもかまいません。PRG
+        ROMはリードとライトのどちらのコマンドを受け取っても、データをデータバスに入れることでリードと同じように反応します。これは、バンク切り替えの場合、CPUも同時にデータバスにデータを乗せようとするため、問題となる。電気的に「バスコンフリクト」で収まってしまうのだ。CPUが勝って正しい値を出すこともあれば、ROMが勝って正しい値を出すこともある。あるいは、ROMが勝って、間違った値を出してしまうかもしれない。これを解決するには、ROMとCPUが同じ値をデータバスに乗せることで、競合が起きないようにします。まず、バンク番号のテーブルを作り、そのテーブルの値を書き込んでバンク切り替えを行います。<br
+          data-dl-uid="76"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="77" data-dl-original="true" data-dl-translated="true" />
         <p
           style="
             margin-top: 0px;
@@ -195,54 +452,18 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="78"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px">Bankswitch:</span>
-        </p>
-        <p
-          style="
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            font: normal normal normal 10px / normal Monaco;
-          "
-        >
-          <span style="letter-spacing: 0px">&nbsp;&nbsp;STA $8000 ;;new bank to use</span>
-        </p>
-        <p
-          style="
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            font: normal normal normal 10px / normal Monaco;
-          "
-        >
-          <span style="letter-spacing: 0px">&nbsp;&nbsp;RTS</span>
-        </p>
-        <br />
-        <br /><span class="Apple-style-span" style="font-weight: bold"
-          ><span class="Apple-style-span" style="font-size: medium"> Bus Conflicts</span></span
-        ><br />
-        When you start running your code on real hardware there is one catch to worry about. For basic
-        mappers, the PRG ROM does not care if it receives a read or a write command. It will respond to
-        both like a read by putting the data on the data bus. This is a problem for bank switching, where
-        the CPU is also trying to put data on the data bus at the same time. They electrically fit in a
-        "bus conflict". The CPU could win, giving you the right value. Or the ROM could win, giving you
-        the wrong value. This is solved by having the ROM and CPU put the same value on the data bus, so
-        there is no conflict. First a table of bank numbers is made, and the value from that table is
-        written to do the bank switch.<br />
-        <br />
-        <p
-          style="
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            font: normal normal normal 10px / normal Monaco;
-          "
-        >
-          <span style="letter-spacing: 0px">... code ...</span>
+          ...<span
+            style="letter-spacing: 0px"
+            data-dl-uid="79"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            コード .</span
+          >..
         </p>
         <p
           style="
@@ -252,8 +473,18 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="80"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px">&nbsp;&nbsp;LDA #$01 ;;put new bank to use into A</span>
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="81"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            LDA #$01 ;新しく使うバンクをAに</span
+          >入れる
         </p>
         <p
           style="
@@ -263,9 +494,17 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="82"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px"
-            >&nbsp;&nbsp;JSR Bankswitch ;;jump to bank switching code</span
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="83"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            JSR Bankswitch ;バンク切り替えコードへジャンプ</span
           >
         </p>
         <p
@@ -276,10 +515,19 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="84"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px">... code ...</span>
+          ...<span
+            style="letter-spacing: 0px"
+            data-dl-uid="85"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >コード</span
+          >...
         </p>
-        <br />
+        <br data-dl-uid="86" data-dl-original="true" data-dl-translated="true" />
         <p
           style="
             margin-top: 0px;
@@ -288,30 +536,17 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="87"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px">Bankswitch:</span>
-        </p>
-        <p
-          style="
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            font: normal normal normal 10px / normal Monaco;
-          "
-        >
-          <span style="letter-spacing: 0px">&nbsp;&nbsp;TAX ;;copy A into X</span>
-        </p>
-        <p
-          style="
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            font: normal normal normal 10px / normal Monaco;
-          "
-        >
-          <span style="letter-spacing: 0px">&nbsp;&nbsp;STA Bankvalues, X ;;new bank to use</span>
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="88"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >バンクスイッチ</span
+          >
         </p>
         <p
           style="
@@ -321,20 +556,18 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="89"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px">&nbsp;&nbsp;RTS</span>
-        </p>
-        <br />
-        <p
-          style="
-            margin-top: 0px;
-            margin-right: 0px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            font: normal normal normal 10px / normal Monaco;
-          "
-        >
-          <span style="letter-spacing: 0px">Bankvalues:</span>
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="90"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            TAX ;;AをXにコピー</span
+          >する
         </p>
         <p
           style="
@@ -344,46 +577,136 @@
             margin-left: 0px;
             font: normal normal normal 10px / normal Monaco;
           "
+          data-dl-uid="91"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          <span style="letter-spacing: 0px">&nbsp;&nbsp;.db $00, $01, $02, $03 ;;bank numbers </span>
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="92"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            STA Bankvalues, X ;新しい銀行を使用</span
+          >する。
+        </p>
+        <p
+          style="
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font: normal normal normal 10px / normal Monaco;
+          "
+          data-dl-uid="93"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="94"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            RTS</span
+          >
+        </p>
+        <br data-dl-uid="95" data-dl-original="true" data-dl-translated="true" />
+        <p
+          style="
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font: normal normal normal 10px / normal Monaco;
+          "
+          data-dl-uid="96"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="97"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >銀行の値</span
+          >。
+        </p>
+        <p
+          style="
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            font: normal normal normal 10px / normal Monaco;
+          "
+          data-dl-uid="98"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          <span
+            style="letter-spacing: 0px"
+            data-dl-uid="99"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >.db $00, $01, $02, $03 ;;バンク番号
+          </span>
         </p>
 
-        <br />
-        The X register is used as an index into the Bankvalues table, so the value written by the CPU
-        will match the value coming from the ROM.<br />
-        <br />
-        <br /><span class="Apple-style-span" style="font-weight: bold"
-          ><span class="Apple-style-span" style="font-size: medium"
-            ><br />
-            Putting It All Together</span
+        <br data-dl-uid="100" data-dl-original="true" data-dl-translated="true" />
+        XレジスタはBankvaluesテーブルのインデックスとして使用され、CPUが書き込んだ値とROMから送られてくる値が一致するようになります。<br
+          data-dl-uid="101"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="102" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="103" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-weight: bold"
+          data-dl-uid="104"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="105"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><br data-dl-uid="106" data-dl-original="true" data-dl-translated="true" />
+            すべてをまとめる</span
           ></span
-        ><br />
-        Download and unzip the
+        ><br data-dl-uid="107" data-dl-original="true" data-dl-translated="true" />
         <a
           href="scraper/files/chrbanks.zip"
           target="_blank"
           original-href="http://www.nespowerpak.com/nesasm/chrbanks.zip"
-          >chrbanks.zip</a
-        >
-        sample files. This set is based on the previous
-        <a
+          data-dl-uid="108"
+          data-dl-original="true"
+          data-dl-translated="true"
+          >chrbanks.zipの</a
+        >サンプルファイルをダウンロードし、解凍してください。このセットは前回の<a
           href="http://www.nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=7974"
           target="_blank"
           original-href="http://www.nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=7974"
-          >Week 5</a
-        >
-        code. Make sure that file, mario0.chr, mario1.chr, and chrbanks.bat is in the same folder as
-        NESASM3, then double click on chrbanks.bat. That will run NESASM3 and should produce
-        chrbanks.nes. Run that NES file in FCEUXD SP to see small Mario.<br />
-        <br />
-        Inside the LatchController subroutine a new section is added to read the Select and Start buttons
-        from the controller. The Select button switches to CHR bank 0, and the Start button switches to
-        CHR bank 1. Graphics of CHR bank 1 have been rearranged so Mario will change to a beetle.
-        &nbsp;The tile numbers are not changed, but the graphics for those tiles are.
-        <div><br /></div>
-        <div>
-          Open the PPU Viewer from the Tools menu in FCEUXD SP and try hitting the buttons. &nbsp;You can
-          see all the graphics changing at once when the active bank switches.
+          data-dl-uid="109"
+          data-dl-original="true"
+          data-dl-translated="true"
+          >Week 5の</a
+        >コードに基づいています。そのファイル、mario0.chr、mario1.chr、chrbanks.batがNESASM3と同じフォルダにあることを確認し、chrbanks.batをダブルクリックします。これでNESASM3が実行され、chrbanks.nesが生成されるはずです。そのNESファイルをFCEUXD
+        SPで実行すると、小さなマリオが表示されます。<br
+          data-dl-uid="110"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="111" data-dl-original="true" data-dl-translated="true" />
+        LatchControllerサブルーチンの中に、コントローラからSelectボタンとStartボタンを読み込むための新しいセクションが追加されています。セレクトボタンはCHRバンク0に、スタートボタンはCHRバンク1に切り替わります。CHRバンク1のグラフィックは、マリオがカブトムシに変わるように再配置されました。
+        タイル番号は変更されませんが、それらのタイルのグラフィックは変更されています。
+        <div data-dl-uid="112" data-dl-original="true" data-dl-translated="true">
+          <br data-dl-uid="113" data-dl-original="true" data-dl-translated="true" />
+        </div>
+        <div data-dl-uid="114" data-dl-original="true" data-dl-translated="true">
+          FCEUXD SPのツールメニューからPPU Viewerを開き、ボタンを押してみてください。
+          アクティブバンクが切り替わったときに、すべてのグラフィックが一度に変化することが確認できると思います。
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
@@ -391,320 +714,507 @@
           class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
           href="#advanced_tutorial-toc"
           data-upgraded=",MaterialButton,MaterialRipple"
+          data-dl-uid="115"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          Back to Table of Contents
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+          目次へ移動
+          <span
+            class="mdl-button__ripple-container"
+            data-dl-uid="116"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><span
+              class="mdl-ripple"
+              data-dl-uid="117"
+              data-dl-original="true"
+              data-dl-translated="true"
+            ></span></span
         ></a>
         <a
           class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
           href="javascript:doCommentToggle('advanced_tutorial-0__comments');"
           data-upgraded=",MaterialButton,MaterialRipple"
+          data-dl-uid="118"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          Toggle Comments
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+          トグルコメント
+          <span
+            class="mdl-button__ripple-container"
+            data-dl-uid="119"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><span
+              class="mdl-ripple"
+              data-dl-uid="120"
+              data-dl-original="true"
+              data-dl-translated="true"
+            ></span></span
         ></a>
-        <div style="float: right">
+        <div style="float: right" data-dl-uid="121" data-dl-original="true" data-dl-translated="true">
           <a
             class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
             href="http://nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=17074"
             target="_blank"
             data-upgraded=",MaterialButton,MaterialRipple"
-          >
-            Original Article
-            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+            data-dl-uid="122"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >元記事<span
+              class="mdl-button__ripple-container"
+              data-dl-uid="123"
+              data-dl-original="true"
+              data-dl-translated="true"
+              ><span
+                class="mdl-ripple"
+                data-dl-uid="124"
+                data-dl-original="true"
+                data-dl-translated="true"
+              ></span></span
           ></a>
         </div>
       </div>
     </div>
     <div class="tutorialCard mdl-card mdl-shadow--2dp" id="advanced_tutorial-1">
       <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">
-          Advanced Nerdy Nights #2: MMC1 CHR and PRG Bank switching, WRAM + Battery
+        <h2
+          class="mdl-card__title-text"
+          data-dl-uid="125"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          Advanced Nerdy Nights #2: MMC1 CHRとPRGのバンク切り替え、WRAM＋バッテリー
         </h2>
       </div>
-      <div class="mdl-card__supporting-text">
-        <b>This Week:</b> The MMC1 is the first advanced mapper made by Nintendo. It is used for many
-        games including top titles like The Legend of Zelda. The main benefits are mirroring control, up
-        to 256KB of PRG ROM, 128KB of CHR RAM or ROM, and 8KB of WRAM. The WRAM can be battery backed for
-        saved games. This tutorial will cover all features of the MMC1 and how to use them. You should be
-        comfortable with the normal Nerdy Nights series before starting. &nbsp;Another more simple lesson
-        for bankswitching is&nbsp;<a
+      <div
+        class="mdl-card__supporting-text"
+        data-dl-uid="126"
+        data-dl-original="true"
+        data-dl-translated="true"
+      >
+        <b data-dl-uid="127" data-dl-original="true" data-dl-translated="true">今週は</b
+        >MMC1は、任天堂が初めて作ったアドバンストマッパーです。ゼルダの伝説などのトップタイトルをはじめ、多くのゲームに使用されている。主な利点は、ミラーリングコントロール、最大256KBのPRG
+        ROM、128KBのCHR
+        RAMまたはROM、8KBのWRAMを搭載しています。WRAMはセーブゲーム用にバッテリーバックが可能です。このチュートリアルでは、MMC1の全機能とその使用方法について説明します。バンクスイッチについては、通常のNerdy
+        Nightsシリーズに慣れている必要がありますが、より簡単なレッスンは<a
           href="http://www.nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=17074"
           target="_blank"
           original-href="http://www.nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=17074"
+          data-dl-uid="128"
+          data-dl-original="true"
+          data-dl-translated="true"
           >Advanced Nerdy Nights #1</a
-        >.&nbsp;&nbsp;If you only need one or two of the banking features then you may want to consider
-        more simple and cheaper mappers instead such as UNROM or CNROM.<br />
-        <br />
-        Carts using the MMC1 will have the S*ROM board code, like SNROM and SGROM. BootGod's
-        <a
+        >です。
+        バンク機能の1つか2つが必要なだけなら、UNROMやCNROMなど、より簡単で安価なマッパーを代わりに検討することができます。<br
+          data-dl-uid="129"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="130" data-dl-original="true" data-dl-translated="true" />
+        MMC1 を使用するカートは、SNROM や SGROM のような S*ROM ボード コードを使用します。BootGod の<a
           href="http://bootgod.dyndns.org:7777/"
           target="_blank"
           original-href="http://bootgod.dyndns.org:7777/"
+          data-dl-uid="131"
+          data-dl-original="true"
+          data-dl-translated="true"
           >NesCartDB</a
-        >
-        database can be searched for which games use which boards. The
-        <a
+        >データベースで、どのゲームがどのボードを使用するかを検索できます。<a
           href="https://www.retrousb.com/product_info.php?cPath=24&amp;products_id=43"
           target="_blank"
           original-href="http://www.retrousb.com/product_info.php?cPath=24&amp;products_id=43"
+          data-dl-uid="132"
+          data-dl-original="true"
+          data-dl-translated="true"
           >ReproPak MMC1</a
-        >
-        board can also be used to build carts.
-        <br />
-        <br /><br /><span class="Apple-style-span" style="font-size: medium"
-          ><b> Shift Registers</b></span
-        ><br />
-        The MMC1 uses a 5 bit shift register to temporarily store the banking bits. Shift registers were
-        covered in
-        <a
+        >ボードは、カートを構築するためにも使用できます。
+        <br data-dl-uid="133" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="134" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="135"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="136"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="137" data-dl-original="true" data-dl-translated="true">
+            シフト レジスタ</b
+          ></span
+        ><br data-dl-uid="138" data-dl-original="true" data-dl-translated="true" />
+        MMC1では、銀行ビットを一時的に格納するために5ビット シフト
+        レジスタを使用します。シフトレジスタについては、<a
           href="http://www.nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=8747"
           target="_blank"
           original-href="http://www.nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=8747"
-          >Week 7</a
-        >. When writing to the register data comes in from data bit 0 only. This is similar to the
-        controller reading where data outputs to data bit 0. Every time a write happens the current bits
-        are shifted and D0 is inserted. The first bit you write eventually becomes to lowest bank bit. On
-        the 5th write when the shift register is full the 5 bit value gets copied to the banking
-        register. At this point the bank switch happens immediately without any delays. To load a bank
-        register the LSR instruction is used for shifting:<br />
-        <pre>
-  LDA banknumber
-STA bankreg    ; load bank bit 0 to shift register from data bit 0
-LSR A          ; shift in next data bit to position 0
-STA bankreg    ; load bank bit 1 from data bit 0
-LSR A
-STA bankreg    ; bank bit 2
-LSR A
-STA bankreg    ; bank bit 3
-LSR A
-STA bankreg    ; bank bit 4, bank register loaded, bank switch happens here</pre
+          data-dl-uid="139"
+          data-dl-original="true"
+          data-dl-translated="true"
+          >第7週で</a
+        >説明しました。レジスタに書き込む場合、データはデータ ビット0のみから入力されます。こ れは、 コ
+        ン ト ロ ー ラ ーが読み出す と き にデー タ がデー タ ビッ ト0 に出力 さ れ る の と 同 じ
+        です。書き込みが行われるたびに現在のビットがシフトされ、D0が挿入されます。最初に書き込んだビットが最終的に最下位バンクのビットになります。5回目の書き込みでシフトレジスタが一杯になると、5ビットの値がバンキングレジスタにコピーされます。この時点で、バンク切り替えは遅延なく即座に行われます。バンクレジスタをロードするには、LSR命令がシフトに使用されます。<br
+          data-dl-uid="140"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="141" data-dl-original="true" data-dl-translated="true">
+ LDA banknumber STA bankreg ; データビット0からシフトレジスタにバンクビット0をロード LSR A ; 次のデータビットを0にシフト STA bankreg ; データビット0からバンクビット1をロード LSR A STA bankreg ; バンクビット2 LSR A STA bankreg ; バンクビット3 LSR A STA bankreg ; バンクビット4、バンクレジスタのロード、バンク切り替えはここで行われます</pre
         >
-        <br />
-        Unlike other simple mappers like UNROM and CNROM, there are no bus conflicts. The ROM is not
-        enabled while you are writing so you do not have to make the data you are writing match.<br />
-        <br />
-        Data bit 7 is also connected to the MMC1. When a write happens to any banking register with D7=1
-        the shift register is reset back to position 0. It will then take another 5 writes to fully load
-        the next value. All other bits are ignored and D0 is not loaded into the shift register. The PRG
-        bits of the control register are also reset to their default values as shown in the next section.
-        Usually you will only reset the MMC1 at the very beginning of your program:
-        <br />
-        <pre>
-  LDA #%10000000
-STA $8000</pre
+        。 <br data-dl-uid="142" data-dl-original="true" data-dl-translated="true" />
+        UNROMやCNROMのような他の簡易マッパと異なり、バスコンフリクトは発生しません。書き込み中はROMが有効にならないので、書き込むデータを一致させる必要がありません。<br
+          data-dl-uid="143"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="144" data-dl-original="true" data-dl-translated="true" />
+        データ・ビット7は、MMC1にも接続されています。D7=1 のバンク レジスタに書き込みが発生すると、シフト
+        レジスタは 0 にリセットされ、次の値を完全にロードするには、さらに 5
+        回の書き込みが必要です。その他のビ ッ ト は無視 さ れ、D0 はシ フ ト レ ジ ス タ に ロ ー ド さ
+        れません。コントロール レジスタのPRG
+        ビットも、次のセクションで示すようにデフォルト値にリセットされます。 通常、MMC1
+        をリセットするのは、プログラムの一番最初だけです。
+        <br data-dl-uid="145" data-dl-original="true" data-dl-translated="true" />
+        <pre data-dl-uid="146" data-dl-original="true" data-dl-translated="true">
+ LDA #%10000000 STA $8000</pre
         >
-        <br /><span class="Apple-style-span" style="font-size: medium"
-          ><b> Config Register at $8000-9FFF</b></span
-        ><br />
-        To load the config register, do 5 writes to the $8000-9FFF range. The config bits are:<br />
-        <br />
-        <pre>
-  43210
------
-CPRMM
-|||||
-|||++- Mirroring (0: one-screen, lower bank; 1: one-screen, upper bank;
-|||               2: vertical; 3: horizontal)
-||+--- PRG swap range (0: switch 16 KB bank at $C000; 1: switch 16 KB bank at $8000;
-||                            only used when PRG bank mode bit below is set to 1)
-|+---- PRG size (0: switch 32 KB at $8000, ignoring low bit of bank number;
-|                         1: switch 16 KB at address specified by location bit above)
-+----- CHR size (0: switch 8 KB at a time; 1: switch two separate 4 KB banks)</pre
+        <br data-dl-uid="147" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="148"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="149" data-dl-original="true" data-dl-translated="true">
+            コンフィグ レジスタ（$8000-9FFF</b
+          ></span
+        ><br data-dl-uid="150" data-dl-original="true" data-dl-translated="true" />
+        コンフィグ
+        レジスタをロードするには、$8000-9FFFの範囲に5回書き込みを行います。コンフィグビットは次のとおりです。<br
+          data-dl-uid="151"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="152" data-dl-original="true" data-dl-translated="true" />
+        <pre data-dl-uid="153" data-dl-original="true" data-dl-translated="true">
+  43210 ----- CPRMM |||| ||++- ミラーリング (0: 1画面、下部バンク; 1: 1画面、上部バンク; ||| 2: 垂直; 3: 水平) ||+--- PRGスワップ範囲 (0: $C000 で16KBバンクを切り替え ; 1: $8000 で16KBバンクを切り替え ;| 下のPRGバンクモードビットが1に設定されているときのみ使用) |+---- PRGサイズ (0:1: 上記ロケーションビットで指定されたアドレスで16KBを切り替える) +----- CHRサイズ (0: 一度に8KBを切り替える; 1: 2つの別々の4KBバンクを切り替える</pre
         >
-        <br />
-        <b>Mirroring Config</b><br />
-        Your program can change the mirroring at any point using these bits. You do not need to wait for
-        vblank to change them. When using the MMC1 the .inesmir directive bit is ignored. You must set it
-        through your code. Mirroring set to 0 and 1 are single screen mirroring modes. Only 1KB is used
-        for all nametables. When scrolling the screen will wrap both vertically and horizontally.
-        Mirroring set to 2 is the typical vertical mirroring, and 3 is horizontal mirroring.<br />
-        <br />
-        <b>PRG Bank Size Config</b><br />
-        The MMC1 swaps PRG ROM in either 16KB or 32KB chunks. By default this bit is set to 1 for 16KB
-        banks. Clearing it to 0 enables 32KB banks. Notice these are not the same size as the 8KB NESASM
-        banks so the bank numbers will be different. When using 16KB banks the MMC1 banks are twice as
-        big, so you must divide your NESASM bank number by 2 when writing it to the bank register. When
-        using 32KB banks you must divide by 4. 16KB banks is most commonly used, with the bulk of the
-        code in the fixed bank and data/graphics/music in the swappable banks.<br />
-        <br />
-        <b>PRG Swap Range Config</b><br />
-        When using 16KB banks set above, the PRG address range that gets swapped can be configured. If
-        32KB banks are used this bit is ignored and the entire $8000-FFFF range is swapped at once.<br />
-        <br />
-        By default this bit is set to 1, making the $8000-BFFF range swappable while the $C000-FFFF range
-        is fixed to the last bank Of PRG. This matches the PRG swapping of the UNROM mapper and is most
-        commonly used. Clearing this bit to 0 changes this so $8000-BFFF is fixed and $C000-FFFF is
-        swappable. <br />
-        <br />
-        Changing the range or bank size can be useful for swapping audio samples but you have to be
-        careful to put IRQ/reset/NMI vectors in all banks that are loaded into the vector area at
-        $FFFA-FFFF.<br />
-        <br />
-        <b>CHR Bank Size Config</b><br />
-        Like the PRG the CHR bank size can be configured to either 4KB or 8KB banks. With 8KB banks the
-        whole $0000-1FFF range is one bank. With 4KB banks there are two banks at PPU $0000-0FFF and
-        $1000-1FFF. This can be used with background in one bank and sprites in another. Then, for
-        example, all sprites could be swapped and the background could stay.<br />
-        <br />
-        <br /><span class="Apple-style-span" style="font-size: medium"
-          ><b> CHR Bank 0 Register at $A000-BFFF</b></span
-        ><br />
-        This is the register for CHR bank 0. To set it do 5 writes to the $A000-BFFF range. When in 4KB
-        CHR mode it selects a bank for PPU $0000-0FFF. The full 5 bit value is used so there are 32
-        possible banks. Each bank is 4KB making it 128KB CHR maximum. When in 8KB CHR mode this register
-        controls the full PPU $0000-1FFF. The bottom bit is ignored so there are 16 possible banks. Each
-        bank is now 8KB which is still 128KB max.<br />
-        <br />
-        <div>
-          <table style="width: 75%" align="center" border="1">
-            <tbody>
-              <tr>
-                <td width="50%"><b>4KB mode</b></td>
-                <td width="50%"><b>8KB mode</b></td>
+        ) <br data-dl-uid="154" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="155" data-dl-original="true" data-dl-translated="true">ミラーリングコンフィグ</b
+        ><br data-dl-uid="156" data-dl-original="true" data-dl-translated="true" />
+        プログラムはこれらのビットを使って、任意の時点でミラーリングを変更することができます。ビ ッ ト
+        を変更す る ために、vblank を待つ必要はあ り ません。MMC1 を使用する場合、.inesmir ディレクティブ
+        ビットは無視されます。コードで設定する必要があります。0と1に設定されたミラーリングは、シングルスクリーンミラーリングモードです。すべてのネームテーブルに1KBのみ使用されます。ミラーリングを2に設定すると一般的な垂直ミラーリング、3に設定すると水平ミラーリングになります。<br
+          data-dl-uid="157"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="158" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="159" data-dl-original="true" data-dl-translated="true">PRGバンクサイズ設定</b
+        ><br data-dl-uid="160" data-dl-original="true" data-dl-translated="true" />
+        MMC1 は、PRG ROM を 16KB または 32KB のチャンクでスワップします。デフ ォ ル ト では、 こ のビ ッ
+        ト は 1 に設定 さ れ、 16KB のバン ク が使用 さ れます。このビットを0 にクリアすると、32KB
+        バンクが有効になります。これらは8KB
+        NESASMバンクと同じサイズではないため、バンク番号が異なることに注意してください。16KBバンクを使用する場合、MMC1バンクは2倍の大きさになりますので、バンクレジスタに書き込む際には、NESASMバンク番号を2で割る必要があります。16KBバンクが最も一般的で、コードの大部分を固定バンクに、データ/グラフィック/ミュージックをスワップ可能なバンクに格納します。<br
+          data-dl-uid="161"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="162" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="163" data-dl-original="true" data-dl-translated="true">PRGスワップレンジ設定</b
+        ><br data-dl-uid="164" data-dl-original="true" data-dl-translated="true" />
+        上記の16KBバンクを使用する場合、スワップされるPRGアドレスの範囲を設定することができます。32KBバンクを使用する場合、このビットは無視され、$8000-FFFFの全範囲が一度にスワップされます。<br
+          data-dl-uid="165"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="166" data-dl-original="true" data-dl-translated="true" />
+        デフォルトでは、このビットは1に設定され、$8000-BFFFの範囲がスワップ可能になり、$C000-FFFFの範囲はPRGの最後のバンクに固定されます。これは、UNROMマッパーのPRGスワッピングと一致し、最も一般的に使用されています。このビットを0にクリアすると、$8000-BFFFが固定され、$C000-FFFFがスワップ可能に変更されます。
+        <br data-dl-uid="167" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="168" data-dl-original="true" data-dl-translated="true" />
+        範囲やバンクサイズを変更すると、オーディオサンプルのスワップに便利ですが、$FFFA-FFFFのベクターエリアにロードされるすべてのバンクにIRQ/リセット/NMIベクターを置くように注意する必要があります。<br
+          data-dl-uid="169"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="170" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="171" data-dl-original="true" data-dl-translated="true">CHRバンクサイズ設定</b
+        ><br data-dl-uid="172" data-dl-original="true" data-dl-translated="true" />
+        PRGと同様にCHRのバンクサイズは4KBまたは8KBバンクに構成することができます。8KBバンクの場合、$0000-1FFFの全範囲が1つのバンクとなります。4KBバンクでは、PPU
+        $0000-0FFFと$1000-1FFFの2つのバンクがあります。このため、1つのバンクに背景、もう1つのバンクにスプライトを配置することができます。例えば、スプライトをすべてスワップして、背景を残すことも可能です。<br
+          data-dl-uid="173"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="174" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="175" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="176"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="177" data-dl-original="true" data-dl-translated="true">
+            CHRバンク0レジスタ（$A000-BFFF</b
+          ></span
+        ><br data-dl-uid="178" data-dl-original="true" data-dl-translated="true" />
+        これは、CHRバンク0用のレジスタです。設定するには、$A000-BFFFの範囲に5回書き込みを行います。4KB
+        CHRモードでは、PPU
+        $0000-0FFFのバンクが選択されます。5ビットの値をすべて使用するので、32個のバンクが可能です。各バンクは4キロバイトで、最大128キロバイトCHRになります。8KB
+        CHRモードでは、このレジスタはPPU
+        $0000-1FFFをフルに制御します。最下位ビットは無視されるので、16の可能なバンクが存在します。各バンクは、現在8キロバイトで、まだ最大128キロバイトです。<br
+          data-dl-uid="179"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="180" data-dl-original="true" data-dl-translated="true" />
+        <div data-dl-uid="181" data-dl-original="true" data-dl-translated="true">
+          <table
+            style="width: 75%"
+            align="center"
+            border="1"
+            data-dl-uid="182"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            <tbody data-dl-uid="183" data-dl-original="true" data-dl-translated="true">
+              <tr data-dl-uid="184" data-dl-original="true" data-dl-translated="true">
+                <td width="50%" data-dl-uid="185" data-dl-original="true" data-dl-translated="true">
+                  <b data-dl-uid="186" data-dl-original="true" data-dl-translated="true">4KBモード</b>
+                </td>
+                <td width="50%" data-dl-uid="187" data-dl-original="true" data-dl-translated="true">
+                  <b data-dl-uid="188" data-dl-original="true" data-dl-translated="true">8KBモード</b>
+                </td>
               </tr>
-              <tr>
-                <td>controls $0000-0FFF</td>
-                <td>controls $0000-1FFF<br />bottom bit is ignored</td>
+              <tr data-dl-uid="189" data-dl-original="true" data-dl-translated="true">
+                <td data-dl-uid="190" data-dl-original="true" data-dl-translated="true">
+                  は、$0000-0FFFを制御します。
+                </td>
+                <td data-dl-uid="191" data-dl-original="true" data-dl-translated="true">
+                  は、$0000-1FFFを制御します。<br
+                    data-dl-uid="192"
+                    data-dl-original="true"
+                    data-dl-translated="true"
+                  />ボトムビットは無視されます
+                </td>
               </tr>
             </tbody>
           </table>
-          <br />
-          <span class="Apple-style-span" style="font-size: medium"
-            ><b><br /></b
+          <br data-dl-uid="193" data-dl-original="true" data-dl-translated="true" />
+          <span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="194"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><b data-dl-uid="195" data-dl-original="true" data-dl-translated="true"
+              ><br data-dl-uid="196" data-dl-original="true" data-dl-translated="true" /></b
           ></span>
         </div>
-        <div>
-          <span class="Apple-style-span" style="font-size: medium"
-            ><b>CHR Bank 1 Register at $C000-DFFF</b></span
-          ><br />
-          This is the register for CHR bank 1. To set it do 5 writes to the $C000-DFFF range. When in 4KB
-          CHR mode it selects a bank for PPU $1000-1FFF. When in 8KB CHR mode it is completely
-          ignored.<br /><br />
+        <div data-dl-uid="197" data-dl-original="true" data-dl-translated="true">
+          <span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="198"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><b data-dl-uid="199" data-dl-original="true" data-dl-translated="true"
+              >CHRバンク1レジスタ（$C000-DFFF</b
+            ></span
+          ><br data-dl-uid="200" data-dl-original="true" data-dl-translated="true" />
+          これはCHRバンク1用のレジスタです。設定するには、$C000-DFFFの範囲に5回の書き込みを行います。4KB
+          CHRモードのとき、これはPPU1000-1FFFのためのバンクを選択します。8KB
+          CHRモードでは、これは完全に無視されます。<br
+            data-dl-uid="201"
+            data-dl-original="true"
+            data-dl-translated="true"
+          /><br data-dl-uid="202" data-dl-original="true" data-dl-translated="true" />
         </div>
-        <div>
-          <table style="width: 75%" align="center" border="1">
-            <tbody>
-              <tr>
-                <td width="50%"><b>4KB mode</b></td>
-                <td width="50%"><b>8KB mode</b></td>
-              </tr>
-              <tr>
-                <td>controls $1000-1FFF</td>
-                <td>register ignored</td>
-              </tr>
-            </tbody>
-          </table>
-          <br /><br /><br /><br />
-          <br /><span class="Apple-style-span" style="font-size: medium"
-            ><b> PRG Bank Register at $E000-FFFF</b></span
-          ><br />
-          This is the register for PRG banking. To set it do 5 writes to the $E000-FFFF range. The bits
-          are:<br />
-          <br />
-          <pre>
-  43210
------
-WPPPP
-|||||
-|++++- Select a PRG ROM bank (low bit ignored in 32 KB mode)
-+----- WRAM chip enable (0: enabled; 1: disabled)</pre
+        <div data-dl-uid="203" data-dl-original="true" data-dl-translated="true">
+          <table
+            style="width: 75%"
+            align="center"
+            border="1"
+            data-dl-uid="204"
+            data-dl-original="true"
+            data-dl-translated="true"
           >
-          <br />
-          In 16KB PRG mode it selects a 16KB PRG bank for the current swappable address range. Only the 4
-          lower bits are used for 16 possible PRG banks. That is 256KB maximum. In 32KB PRG mode it
-          selects a 32KB bank for the $8000-FFFF range. Only bits 3-1 are used for 8 possible banks. Bit
-          0 is ignored.&nbsp;
-        </div>
-        <div><br /></div>
-        <div>
-          <table style="width: 75%" align="center" border="1">
-            <tbody>
-              <tr>
-                <td width="33%"><b>16KB mode</b><br />swap=0</td>
-                <td width="33%"><b>16KB mode</b><br />swap=1</td>
-                <td width="33%"><b>32KB mode</b></td>
+            <tbody data-dl-uid="205" data-dl-original="true" data-dl-translated="true">
+              <tr data-dl-uid="206" data-dl-original="true" data-dl-translated="true">
+                <td width="50%" data-dl-uid="207" data-dl-original="true" data-dl-translated="true">
+                  <b data-dl-uid="208" data-dl-original="true" data-dl-translated="true">4KBモード</b>
+                </td>
+                <td width="50%" data-dl-uid="209" data-dl-original="true" data-dl-translated="true">
+                  <b data-dl-uid="210" data-dl-original="true" data-dl-translated="true">8KBモード</b>
+                </td>
               </tr>
-              <tr>
-                <td>controls $C000-FFFF</td>
-                <td>controls $8000-BFFF (default setting)</td>
-                <td>controls $8000-FFFF<br />low bit ignored</td>
+              <tr data-dl-uid="211" data-dl-original="true" data-dl-translated="true">
+                <td data-dl-uid="212" data-dl-original="true" data-dl-translated="true">
+                  1000-1FFFを制御
+                </td>
+                <td data-dl-uid="213" data-dl-original="true" data-dl-translated="true">レジスタ無視</td>
               </tr>
             </tbody>
           </table>
-          <br />
-          <b><br /></b>
+          <br data-dl-uid="214" data-dl-original="true" data-dl-translated="true" /><br
+            data-dl-uid="215"
+            data-dl-original="true"
+            data-dl-translated="true"
+          /><br data-dl-uid="216" data-dl-original="true" data-dl-translated="true" /><br
+            data-dl-uid="217"
+            data-dl-original="true"
+            data-dl-translated="true"
+          />
+          <br data-dl-uid="218" data-dl-original="true" data-dl-translated="true" /><span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="219"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><b data-dl-uid="220" data-dl-original="true" data-dl-translated="true">
+              E000-FFFFのPRGバンク・レジスタ</b
+            ></span
+          ><br data-dl-uid="221" data-dl-original="true" data-dl-translated="true" />
+          これは、PRGバンク用のレジスタです。設定するには、$E000-FFFFの範囲に5回書き込みを行います。ビットは次のとおりです。<br
+            data-dl-uid="222"
+            data-dl-original="true"
+            data-dl-translated="true"
+          />
+          <br data-dl-uid="223" data-dl-original="true" data-dl-translated="true" />
+          <pre data-dl-uid="224" data-dl-original="true" data-dl-translated="true">
+ 43210 ----- WPPPP |||| |++++- PRG ROMバンクを選択（32KBモードでは下位ビット無視） +----- WRAMチップ・イネーブル（0：有効、1：無効） 16KBPGモードでは、PRG ROM</pre
+          >
+          バンクを選択します。 <br data-dl-uid="225" data-dl-original="true" data-dl-translated="true" />
+          16KB PRGモードでは、現在のスワップ可能なアドレス範囲に対して、16KB
+          PRGバンクを選択します。下位4ビットのみが16個の可能なPRGバンクに使用されます。最大256KBです。32KB
+          PRGモードでは、$8000-FFFFの範囲に32KBバンクを選択します。ビット3-1のみが8つのバンクに使用されます。ビット0は無視されます。
         </div>
-        <div>
-          <b>WRAM</b><br />
-          Bit 5 of the PRG Bank register also controls WRAM access. Clear this bit to enable WRAM access.
-          Setting the bit to 1 disables the WRAM. If the WRAM is used for saved games it is usually
-          disabled when it is not being accessed to prevent unwanted writes from corrupting the saves
-          when the console is reset.<br />
-          <br />
-          To use WRAM in your program nothing needs to be changed in the iNES header. The emulator will
-          assume there is WRAM based on the mapper number. Next you need to enable the WRAM in the PRG
-          Bank register. With that bit at 0 you can now use the WRAM. It is just plain RAM that you can
-          read or write at the $6000-7FFF range. Like the console RAM the contents are unknown when the
-          console is powered on. All RAM is cleared to unknown values when power is removed. However the
-          RAM is not cleared when just the reset button is pushed. Power is still going to the cart so
-          the RAM is still valid. This can be useful for telling if the console was just turned on or was
-          only reset.<br />
-          <br />
-          To add a battery to the WRAM, set the .inesmir directive to 2 in the iNES header. Now read and
-          write to the WRAM normally. When power is removed the RAM contents will remain. The emulator
-          will create an 8KB .sav file for the WRAM, however some emulators will not do this unless you
-          have done some WRAM access.<br />
-          <br />
-          <br />
-          <span class="Apple-style-span" style="font-size: medium"><b>Banking Routines</b></span
-          ><br />
-          Keeping track of all the register addresses and bits can get confusing, so a few simple
-          routines are used instead. In general subroutines should be used for even simple bank switching
-          so the mapper can be changed more easily later. Only the most commonly used Config and PRG Bank
-          register routines are shown here, it is your job to write the others.<br />
-          <br />
-          <pre>ConfigWrite:        ; make sure this is in a fixed PRG bank so the RTS doesn't get swapped away
-LDA #$80
-STA $8000         ; reset the shift register
-LDA #%00001110    ; 8KB CHR, 16KB PRG, $8000-BFFF swappable, vertical mirroring
-STA $8000         ; first data bit
-LSR A             ; shift to next bit
-STA $8000         ; second data bit
-LSR A             ; etc
-STA $8000
-LSR A
-STA $8000
-LSR A
-STA $8000         ; config bits written here, takes effect immediately
-RTS<br><br>PRGBankWrite:       ; make sure this is in a fixed bank so it doesnt get swapped away
-LDA bankNumber    ; get bank number into A
-STA $E000         ; first data bit
-LSR A             ; shift to next bit
-STA $E000
-LSR A
-STA $E000
-LSR A
-STA $E000
-LSR A
-STA $E000         ; bank switch happens immediately here
-RTS</pre>
-          <br /><span class="Apple-style-span" style="font-size: medium"
-            ><b> Putting It All Together</b></span
-          ><br />
-          Download and unzip the
+        <div data-dl-uid="226" data-dl-original="true" data-dl-translated="true">
+          <br data-dl-uid="227" data-dl-original="true" data-dl-translated="true" />
+        </div>
+        <div data-dl-uid="228" data-dl-original="true" data-dl-translated="true">
+          <table
+            style="width: 75%"
+            align="center"
+            border="1"
+            data-dl-uid="229"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >
+            <tbody data-dl-uid="230" data-dl-original="true" data-dl-translated="true">
+              <tr data-dl-uid="231" data-dl-original="true" data-dl-translated="true">
+                <td width="33%" data-dl-uid="232" data-dl-original="true" data-dl-translated="true">
+                  <b data-dl-uid="233" data-dl-original="true" data-dl-translated="true">16KBモード</b
+                  ><br data-dl-uid="234" data-dl-original="true" data-dl-translated="true" />スワップ=0
+                </td>
+                <td width="33%" data-dl-uid="235" data-dl-original="true" data-dl-translated="true">
+                  <b data-dl-uid="236" data-dl-original="true" data-dl-translated="true">16KBモード</b
+                  ><br data-dl-uid="237" data-dl-original="true" data-dl-translated="true" />スワップ=1
+                </td>
+                <td width="33%" data-dl-uid="238" data-dl-original="true" data-dl-translated="true">
+                  <b data-dl-uid="239" data-dl-original="true" data-dl-translated="true">32KBモード</b>
+                </td>
+              </tr>
+              <tr data-dl-uid="240" data-dl-original="true" data-dl-translated="true">
+                <td data-dl-uid="241" data-dl-original="true" data-dl-translated="true">
+                  は、$C000-FFFFを制御します。
+                </td>
+                <td data-dl-uid="242" data-dl-original="true" data-dl-translated="true">
+                  8000-BFFFを制御する（デフォルト設定）
+                </td>
+                <td data-dl-uid="243" data-dl-original="true" data-dl-translated="true">
+                  8000-FFFFを制御する<br
+                    data-dl-uid="244"
+                    data-dl-original="true"
+                    data-dl-translated="true"
+                  />ロービット無視
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br data-dl-uid="245" data-dl-original="true" data-dl-translated="true" />
+          <b data-dl-uid="246" data-dl-original="true" data-dl-translated="true"
+            ><br data-dl-uid="247" data-dl-original="true" data-dl-translated="true"
+          /></b>
+        </div>
+        <div data-dl-uid="248" data-dl-original="true" data-dl-translated="true">
+          <b data-dl-uid="249" data-dl-original="true" data-dl-translated="true">WRAM</b
+          ><br data-dl-uid="250" data-dl-original="true" data-dl-translated="true" />
+          PRG バンクレジスタの 5 ビットも WRAM
+          アクセスを制御します。このビットをクリアすると、WRAMアクセスが有効になります。
+          このビットを1にセットすると、WRAMが無効になります。WRAMがセーブゲームに使用される場合、コンソールがリセットされる時、セーブを破壊する不要な書き込みを防ぐために、アクセスされない時は、通常無効化されます。<br
+            data-dl-uid="251"
+            data-dl-original="true"
+            data-dl-translated="true"
+          />
+          <br data-dl-uid="252" data-dl-original="true" data-dl-translated="true" />
+          プログラムでWRAMを使用するには、iNESのヘッダーを何も変更する必要はありません。エミュレータは、マッパーの番号からWRAMがあると判断します。次に、PRGバンクレジスタでWRAMを有効にする必要があります。このビットを0にすると、WRAMを使用できるようになります。WRAMは、$6000-7FFFの範囲で読み書きができる、単なるRAMです。コンソールのRAMと同様に、電源投入時には、その内容は不明です。電源を切ると、すべてのRAMがクリアされ、不明な値になります。ただし、リセットボタンを押しただけでは、RAMはクリアされない。カートにはまだ電源が供給されているので、RAMはまだ有効である。これは、ゲーム機の電源が入っただけなのか、リセットされただけなのかを判断するのに有効です。<br
+            data-dl-uid="253"
+            data-dl-original="true"
+            data-dl-translated="true"
+          />
+          <br data-dl-uid="254" data-dl-original="true" data-dl-translated="true" />
+          WRAMにバッテリーを追加するには、iNESヘッダーの.inesmirディレクティブを2に設定します。これで、WRAMへの読み書きが正常に行えるようになります。電源を落としても、RAMの内容は残ります。エミュレータはWRAM用に8KBの.savファイルを作成しますが、いくつかのエミュレータは、あなたがWRAMにアクセスしない限り、これを実行しないでしょう。<br
+            data-dl-uid="255"
+            data-dl-original="true"
+            data-dl-translated="true"
+          />
+          <br data-dl-uid="256" data-dl-original="true" data-dl-translated="true" />
+          <br data-dl-uid="257" data-dl-original="true" data-dl-translated="true" />
+          <span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="258"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><b data-dl-uid="259" data-dl-original="true" data-dl-translated="true"
+              >バンキングルーチン</b
+            ></span
+          ><br data-dl-uid="260" data-dl-original="true" data-dl-translated="true" />
+          すべてのレジスタのアドレスとビットを追跡すると混乱するので、いくつかの簡単なルーチンが代わりに使用されます。一般に、簡単なバンク切り替えにもサブルーチンを使用することで、後でマッパーをより簡単に変更することができます。ここでは、最も一般的に使用されるコンフィグとPRGバンクのレジスタルーチンのみを示しており、他は各自の作業となります。<br
+            data-dl-uid="261"
+            data-dl-original="true"
+            data-dl-translated="true"
+          />
+          <br data-dl-uid="262" data-dl-original="true" data-dl-translated="true" />
+          <pre
+            data-dl-uid="263"
+            data-dl-original="true"
+            data-dl-translated="true"
+          >ConfigWrite。        RTSがスワップされないように、これが固定PRGバンクにあることを確認してください LDA #$80 STA $8000 ; シフトレジスタをリセット LDA #%00001110 ; 8KB CHR, 16KB PRG, $8000-BFFF swappable, 垂直ミラーリング STA $8000 ;最初のデータビット LSR A ; 次のビットにシフト STA $8000 ; 2番目のデータビット LSR A ; etc STA $8000 LSR A STA $8000 ; ここに書き込んだ設定ビットはすぐに反映される RTS<br data-dl-uid="264" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="265" data-dl-original="true" data-dl-translated="true">PRGBankWrite:       スワップされないように固定バンクであることを確認 LDA bankNumber ; バンク番号をAに取得 STA $E000 ; 最初のデータビット LSR A ; 次のビットにシフト STA $E000 LSR A STA $E000 LSR A STA $E000 ; バンク切り替えはここですぐに行われる RTS</pre>
+          <br data-dl-uid="266" data-dl-original="true" data-dl-translated="true" /><span
+            class="Apple-style-span"
+            style="font-size: medium"
+            data-dl-uid="267"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><b data-dl-uid="268" data-dl-original="true" data-dl-translated="true">
+              すべてをまとめる</b
+            ></span
+          ><br data-dl-uid="269" data-dl-original="true" data-dl-translated="true" />
           <a
             href="scraper/files/cyoammc1.zip"
             target="_blank"
             original-href="http://www.nespowerpak.com/nesasm/cyoammc1.zip"
-            >cyoammc1.zip</a
-          >
-          sample files. The CYOA code has been changed to the MMC1 mapper. Running the cyoammc1.bat file
-          will create cyoammc1.nes, which will run in an emulator. This sample uses 8KB of CHR RAM so no
-          CHR banking has been included. The changes from UNROM PRG mapping are minimal. Some of the
-          variables have been moved to the WRAM area to show how to use it. An example of using WRAM to
-          detect reset is also included in resetCount. Try changing the battery info in the iNES header
-          to see how it makes resetCount change between power and resets.<br /><br /><br /><br /><br /><br />
+            data-dl-uid="270"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >cyoammc1.zipの</a
+          >サンプルファイルをダウンロードし、解凍してください。CYOAのコードはMMC1マッパーに変更されています。cyoammc1.batファイルを実行すると、エミュレータで動作するcyoammc1.nesが作成されます。このサンプルは8KBのCHR
+          RAMを使用しますので、CHRバンキングは含まれていません。UNROM
+          PRGマッピングからの変更は最小限です。変数の一部をWRAM領域に移動し、使い方を示しています。リセット検出のためにWRAMを使用する例もresetCountに含まれています。iNESヘッダの電池情報を変更することで、電源投入時とリセット時でresetCountがどのように変化するかを試してみてください。<br
+            data-dl-uid="271"
+            data-dl-original="true"
+            data-dl-translated="true"
+          /><br data-dl-uid="272" data-dl-original="true" data-dl-translated="true" /><br
+            data-dl-uid="273"
+            data-dl-original="true"
+            data-dl-translated="true"
+          /><br data-dl-uid="274" data-dl-original="true" data-dl-translated="true" /><br
+            data-dl-uid="275"
+            data-dl-original="true"
+            data-dl-translated="true"
+          /><br data-dl-uid="276" data-dl-original="true" data-dl-translated="true" />
         </div>
       </div>
       <div class="mdl-card__actions mdl-card--border">
@@ -712,565 +1222,689 @@ RTS</pre>
           class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
           href="#advanced_tutorial-toc"
           data-upgraded=",MaterialButton,MaterialRipple"
+          data-dl-uid="277"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          Back to Table of Contents
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+          目次へ移動
+          <span
+            class="mdl-button__ripple-container"
+            data-dl-uid="278"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><span
+              class="mdl-ripple"
+              data-dl-uid="279"
+              data-dl-original="true"
+              data-dl-translated="true"
+            ></span></span
         ></a>
         <a
           class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
           href="javascript:doCommentToggle('advanced_tutorial-1__comments');"
           data-upgraded=",MaterialButton,MaterialRipple"
+          data-dl-uid="280"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          Toggle Comments
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+          トグルコメント
+          <span
+            class="mdl-button__ripple-container"
+            data-dl-uid="281"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><span
+              class="mdl-ripple"
+              data-dl-uid="282"
+              data-dl-original="true"
+              data-dl-translated="true"
+            ></span></span
         ></a>
-        <div style="float: right">
+        <div style="float: right" data-dl-uid="283" data-dl-original="true" data-dl-translated="true">
           <a
             class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
             href="http://nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=33260"
             target="_blank"
             data-upgraded=",MaterialButton,MaterialRipple"
-          >
-            Original Article
-            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+            data-dl-uid="284"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >元記事<span
+              class="mdl-button__ripple-container"
+              data-dl-uid="285"
+              data-dl-original="true"
+              data-dl-translated="true"
+              ><span
+                class="mdl-ripple"
+                data-dl-uid="286"
+                data-dl-original="true"
+                data-dl-translated="true"
+              ></span></span
           ></a>
         </div>
       </div>
     </div>
     <div class="tutorialCard mdl-card mdl-shadow--2dp" id="advanced_tutorial-2">
       <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">Advanced Nerdy Nights #3: Horizontal background scrolling</h2>
+        <h2
+          class="mdl-card__title-text"
+          data-dl-uid="287"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          Advanced Nerdy Nights #3：背景の水平スクロール
+        </h2>
       </div>
-      <div class="mdl-card__supporting-text">
-        <b>This Week:&nbsp;</b>Time to learn how to do horizontal background scrolling, like Super Mario
-        Bros. Hopefully it is explained with the most easy to understand code. There is no compression,
-        no buffers, and no metatiles, so only the ideas of scrolling are presented. Once you understand
-        the scrolling part you should look into those other topics to save code/data space and increase
-        performance if needed. <br />
-        <br /><br /><br /><span class="Apple-style-span" style="font-size: medium"
-          ><b>Nametable Review</b></span
-        ><br />
-        Before starting the scrolling you must fully understand how nametables work. One nametable is
-        32x30 background tiles, which covers exactly one visible screen. Including the attribute table,
-        each screen needs 1KB of PPU RAM. The NES PPU has the address space for 4 nametables ($2000,
-        $2400, $2800, $2C00) in a 2x2 grid:<br />
-        <pre>
-       +-----------+-----------+
-|           |           |
-|           |           |
-|   $2000   |   $2400   |
-|           |           |
-|           |           |
-+-----------+-----------+
-|           |           |
-|           |           |
-|   $2800   |   $2C00   |
-|           |           |
-|           |           |
-+-----------+-----------+</pre
+      <div
+        class="mdl-card__supporting-text"
+        data-dl-uid="288"
+        data-dl-original="true"
+        data-dl-translated="true"
+      >
+        <b data-dl-uid="289" data-dl-original="true" data-dl-translated="true">今週は </b
+        >、スーパーマリオブラザーズのような背景の水平スクロールの方法を学ぶ時間です。
+        うまくいけば、最も分かりやすいコードで説明されます。圧縮もバッファもメタタイルもないので、スクロールのアイデアだけが提示されます。スクロールの部分を理解したら、必要に応じて、コード/データ領域を節約し、パフォーマンスを向上させるために、それらの他のトピックにも目を向けてみてください。
+        <br data-dl-uid="290" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="291" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="292"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="293" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="294"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="295" data-dl-original="true" data-dl-translated="true"
+            >ネームテーブルのレビュー</b
+          ></span
+        ><br data-dl-uid="296" data-dl-original="true" data-dl-translated="true" />
+        スクロールを始める前に、ネームテーブルの仕組みを完全に理解しておく必要があります。1つのネームテーブルは32x30の背景タイルで、ちょうど1つの可視スクリーンをカバーします。属性テーブルを含めると、1画面あたり1KBのPPU
+        RAMが必要です。NESのPPUは、2x2グリッドの4つのネームテーブル（2000ドル、2400ドル、2800ドル、2C00ドル）のアドレス空間を持っています。<br
+          data-dl-uid="297"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="298" data-dl-original="true" data-dl-translated="true">
+ +-----------+-----------+｜｜｜｜｜｜｜｜｜$2000｜$2400｜｜｜｜｜｜+-----------+-----------+｜｜｜｜｜｜｜$2800｜$2C00｜｜｜｜｜+-----------+-----------+</pre
         >
-
-        However the NES only has 2KB of PPU RAM inside the console, so there are only two actual
-        nametables. The other two nametables are copies of those actual ones. Your mirroring settings
-        determine the layout of the actual nametables and which ones are copies. <br />
-        <br />
-        Vertical mirroring means the nametables stacked vertically are the same data. 0 ($2000) is a
-        mirror of 2 ($2800), and 1 ($2400) is a mirror of 3 ($2C00). 0 and 1 are next to each other and
-        have different data. This is what we want for horizontal scrolling. When you are looking at
-        nametable 0 and scroll to the right, nametable 1 will be in view. Typically your mirroring
-        setting is the opposite of the scrolling direction. To set the iNES header:<br />
-        <pre>  .inesmir 1  ;;VERT mirroring for HORIZ scrolling</pre>
-        <br />
-        <span class="Apple-style-span" style="font-size: medium"><b>Scroll registers</b></span
-        ><br />
-        Before scrolling we will fill both nametables 0 ($2000) and 1 ($2400). The same data will be
-        copied into both, except the attribute table will be different. By setting the second nametable
-        attributes to another color palette the two screens will have a very visible difference.<br />
-        <pre>
-FillNametables:
-LDA $2002             ; read PPU status to reset the high/low latch
-LDA #$20
-STA $2006             ; write the high byte of $2000 address (nametable 0)
-LDA #$00
-STA $2006             ; write the low byte of $2000 address
-LDY #$08
-LDX #$00              ; fill 256 x 8 bytes = 2KB, both nametables all full
-LDA #$7F
-FillNametablesLoop:
-STA $2007
-DEX
-BNE FillNametablesLoop
-DEY
-BNE FillNametablesLoop</pre
+        しかしNESは本体内に2KBのRAMを持っているだけなので、実際のNameTableはたった2つしかないのです。他の2つのネームテーブルは、これらの実際のネームテーブルのコピーです。ミラーリングの設定によって、実際のネームテーブルのレイアウトと、どのネームテーブルがコピーであるかが決まります。
+        <br data-dl-uid="299" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="300" data-dl-original="true" data-dl-translated="true" />
+        垂直ミラーリングは、垂直方向に積み重ねたネームテーブルが同じデータであることを意味します。0（$2000）は2（$2800）のミラーであり、1（$2400）は3（$2C00）のミラーです。0と1は隣り合っていて、異なるデータを持っています。これは、水平スクロールのために必要なことです。nametable
+        0を見ているときに、右へスクロールすると、nametable
+        1が表示されます。通常、ミラーリングの設定は、スクロールの方向と逆にします。iNESのヘッダーを設定する場合。<br
+          data-dl-uid="301"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="302" data-dl-original="true" data-dl-translated="true">
+.inesmir 1 ;;HORIZスクロールのためのVERTミラーリング</pre
         >
-        <pre>
+        <br data-dl-uid="303" data-dl-original="true" data-dl-translated="true" />
+        <span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="304"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="305" data-dl-original="true" data-dl-translated="true"
+            >スクロールレジスタ</b
+          ></span
+        ><br data-dl-uid="306" data-dl-original="true" data-dl-translated="true" />
+        スクロールする前に、ネームテーブル0 (2000ドル)と1
+        (2400ドル)の両方を埋めます。同じデータが両方にコピーされますが、属性テーブルが異なります。2番目のネームテーブルの属性を別のカラーパレットに設定することで、2つの画面は非常に目に見える違いを持つようになります。<br
+          data-dl-uid="307"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="308" data-dl-original="true" data-dl-translated="true">
+FillNametables: LDA $2002 ; PPUの状態を読み、ハイ／ローラッチをリセット LDA #$20 STA $2006 ; $2000アドレスのハイバイトを書き込む（ネームテーブル0） LDA #$00 STA $2006 ; $2000アドレスのローバイトを書き込む LDY #$08 LDX #$00 ; 256×8バイト=2KBを埋める、両方のネームテーブルともフルに埋める LDA #$7F FillNametablesLoop:
+STA $2007 DEX BNE FillNametablesLoop DEY BNE FillNametablesLoop</pre
+        >
+        <pre data-dl-uid="309" data-dl-original="true" data-dl-translated="true">
 FillAttrib0:
-LDA $2002             ; read PPU status to reset the high/low latch
-LDA #$23
-STA $2006             ; write the high byte of $23C0 address (nametable 0 attributes)
-LDA #$C0
-STA $2006             ; write the low byte of $23C0 address
-LDX #$40              ; fill 64 bytes
-LDA #$00              ; palette group 0
-FillAttrib0Loop:
-STA $2007
-DEX
-BNE FillAttrib0Loop</pre
+LDA $2002 ; PPUの状態を読み取り、ハイ／ローラッチをリセット LDA #$23 STA $2006 ; $23C0アドレスのハイバイトをライト（ネームテーブル0属性） LDA #$C0 STA $2006 ; $23C0アドレスのローバイトをライト LDX #$40 ; 64バイトを埋める LDA #$00 ; パレットグループ0 FillAttrib0Loop:
+STA $2007 DEX BNE FillAttrib0Loop</pre
         >
-        <pre>
-FillAttrib1:
-LDA $2002             ; read PPU status to reset the high/low latch
-LDA #$27
-STA $2006             ; write the high byte of $27C0 address (nametable 1 attributes)
-LDA #$C0
-STA $2006             ; write the low byte of $27C0 address
-LDX #$40              ; fill 64 bytes
-LDA #$FF              ; palette group 3
-FillAttrib1Loop:
-STA $2007
-DEX
-BNE FillAttrib1Loop</pre
+        <pre data-dl-uid="310" data-dl-original="true" data-dl-translated="true">
+FillAttrib1: LDA $2002 ; PPU状態を読み取り、ハイ／ローラッチをリセット LDA #$27 STA $2006 ; $27C0アドレスのハイバイト（ネームテーブル1属性）をライト LDA #$C0 STA $2006 ; $27C0アドレスのローバイ トをライト LDX #$40 ; 64バイトをフィル LDA #$FF ; パレットグループ3 FillAttrib1Loop:
+STA $2007 DEX BNE FillAttrib1Loop</pre
         >
-        The scroll registers are at $2005. Like some other PPU registers you need to write to it twice.
-        The first write is the horizontal scroll count, the second write is the vertical scroll count.
-        The scroll sets which pixel of the nametable for the start of the left side of the screen.
-        Previously we have set the scroll to 0 so the left side of the screen is aligned with the left
-        edge of the nametable. The scroll registers are both 8 bit registers, making the scroll range 0
-        to 255. The screen is 256 pixels wide so the horizontal scroll register covers one full screen
-        wide.<br />
-        <br />
-        This sample code just increments the horizontal scroll register ($2005) by 1 on every frame. You
-        can see when the first nametable scrolls off the screen, the second one comes on screen. The
-        previously set colors make the split between nametables obvious. As the scroll register wraps
-        from 255 to 0 the first nametable becomes completely visible again. You can also see the sprites
-        are not affected by the scroll registers. They have their own separate x and y position data.<br />
-        <pre>NMI:
-LDA #$00
-STA $2003       
-LDA #$02
-STA $4014       ; sprite DMA from $0200
-
-; run other game graphics updating code here
-
-LDA #$00
-STA $2006        ; clean up PPU address registers
-STA $2006<br><br>  INC scroll       ; add one to our scroll variable each frame
-LDA scroll
-STA $2005        ; write the horizontal scroll count register<br><br>  LDA #$00         ; no vertical scrolling
-STA $2005
-
-;;This is the PPU clean up section, so rendering the next frame starts properly.
-LDA #%10010000   ; enable NMI, sprites from Pattern Table 0, background from Pattern Table 1
-STA $2000
-LDA #%00011110   ; enable sprites, enable background, no clipping on left side
-STA $2001<br><br>  ; run normal game engine code here
-; reading from controllers, etc
-
-RTI              ; return from interrupt</pre>
-        <br />
-        The full code and compiled .NES file is available from the download link at the bottom of this
-        tutorial. scrolling1.asm includes everything up to this point.
-        <br /><br /><br />
-        <span class="Apple-style-span" style="font-size: medium"><b>Nametable Register</b></span
-        ><br />
-        The problem with just the scroll register is that it isn't big enough. In the previous example
-        the scroll wrapped from 255 to 0, so the second nametable is never shown on the left side. Both
-        nametables together is 512 pixels wide but the scroll can only count 256 pixels. The solution is
-        to switch which nametable is on the left side of the screen at the same time the scroll register
-        wraps to 0.<br />
-        <br />
+        スクロールレジスタは$2005にあります。他のPPUレジスタと同様に、2回書き込む必要があります。
+        1回目は水平スクロール数、2回目は垂直スクロール数です。
+        スクロールは、画面の左側の開始点をネームテーブルのどのピクセルにするかを設定します。
+        これまでは、画面の左側をネームテーブルの左端と一致させるためにスクロールを0に設定していましたが、今回は、画面の左側をネームテーブルの左端と一致させるためにスクロールを0に設定します。スクロールレジスタは両方とも8ビットレジスタで、スクロールの範囲は0から255までです。画面の幅は256ピクセルなので、水平スクロールレジスタは画面一杯の幅をカバーします。<br
+          data-dl-uid="311"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="312" data-dl-original="true" data-dl-translated="true" />
+        このサンプルコードでは、1フレームごとに水平スクロールレジスタ（$2005）を1だけインクリメントしています。1つ目の名前テーブルが画面外にスクロールすると、2つ目の名前テーブルが画面内に表示されるのがわかります。先に設定した色によって、ネームテーブルが分割されていることが一目瞭然です。スクロールレジスタが255から0にラップされると、最初のネームテーブルが再び完全に見えるようになります。また、スプライトはスクロールレジスタの影響を受けないことがわかります。スプライトには、それぞれ独立したXとYの位置データがあります。<br
+          data-dl-uid="313"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre
+          data-dl-uid="314"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >NMI: LDA #$00 STA $2003 LDA #$02 STA $4014 ; スプライトDMA from $0200 ; ここで他のゲームグラフィックス更新コードを実行 LDA #$00 STA $2006 ; PPUアドレスレジスタをクリーンアップ STA $2006<br data-dl-uid="315" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="316" data-dl-original="true" data-dl-translated="true"> INC scroll ; フレームごとにスクロール変数に1を追加 LDA scroll STA $2005 ; 水平スクロール数レジスタを書き込み<br data-dl-uid="317" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="318" data-dl-original="true" data-dl-translated="true"> LDA #$00 ; 縦スクロールなし STA $2005 ;; 次のフレームを適切に描画開始するために、このセクションは、 PPUクリーンアップセクション</pre>
+        と呼ばれます。
+        <pre
+          data-dl-uid="314"
+          data-dl-translated="true"
+        >LDA #%10010000 ; NMIを有効にし、パターンテーブル0からスプライト、パターンテーブル1から背景 STA $2000 LDA #%00011110 ; スプライト、背景を有効にし、左側でクリッピングしない STA $2001<br data-dl-uid="319" data-dl-translated="true"><br data-dl-uid="320" data-dl-translated="true">; ここで通常のゲームエンジンコードを実行 ; コントローラからの読み込みなど RTI ; 割り込みから復帰</pre>
+        する <br data-dl-uid="321" data-dl-original="true" data-dl-translated="true" />
+        完全なコードとコンパイルされた.NESファイルは、このチュートリアルの一番下にあるダウンロードリンクから入手できます。scrolling1.asmには、ここまでのすべてが含まれています。
+        <br data-dl-uid="322" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="323"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="324" data-dl-original="true" data-dl-translated="true" />
+        <span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="325"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="326" data-dl-original="true" data-dl-translated="true"
+            >ネームテーブル・レジスタ</b
+          ></span
+        ><br data-dl-uid="327" data-dl-original="true" data-dl-translated="true" />
+        スクロールレジスタだけの問題点は、十分な大きさがないことです。前の例では、スクロールは255から0に折り返していたので、2つ目のネームテーブルは左側に表示されることはありません。両方の名前テーブルを合わせると512ピクセルの幅になりますが、スクロールは256ピクセルしかカウントできません。解決策としては、スクロールレジスターが0にラップされると同時に、どちらの名前テーブルが画面の左側に表示されるかを切り替えることです。<br
+          data-dl-uid="328"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="329" data-dl-original="true" data-dl-translated="true" />
         <img
           src="img/ntA.png"
           original-src="http://www.nespowerpak.com/nesasm/ntA.png"
           show-src="img/ntA.png"
-        /><br />
-        Vertical mirroring means nametables are arranged horizontally<br />
-        <br />
+          data-dl-uid="330"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="331" data-dl-original="true" data-dl-translated="true" />
+        垂直ミラーリングとは、ネームテーブルを水平に並べることです。<br
+          data-dl-uid="332"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="333" data-dl-original="true" data-dl-translated="true" />
         <img
           src="img/ntB.png"
           original-src="http://www.nespowerpak.com/nesasm/ntB.png"
           show-src="img/ntB.png"
-        /><br />
-        Scrolling shows nametable 0 and 1 (blue) on the screen (red)<br />
-        <br />
+          data-dl-uid="334"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="335" data-dl-original="true" data-dl-translated="true" />
+        スクロールすると、画面（赤）上にnametable 0と1（青）が表示されます。<br
+          data-dl-uid="336"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="337" data-dl-original="true" data-dl-translated="true" />
         <img
           src="img/ntC.png"
           original-src="http://www.nespowerpak.com/nesasm/ntC.png"
           show-src="img/ntC.png"
-        /><br />
-        When the scroll register wraps, nametable 0 is displayed again<br />
-        <br />
+          data-dl-uid="338"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="339" data-dl-original="true" data-dl-translated="true" />
+        スクロールレジスターがラップすると、再びnametable 0が表示されます。<br
+          data-dl-uid="340"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="341" data-dl-original="true" data-dl-translated="true" />
         <img
           src="img/ntD.png"
           original-src="http://www.nespowerpak.com/nesasm/ntD.png"
           show-src="img/ntD.png"
-        /><br />
-        Swap which nametable is on the left when the wrap happens to display nametable 1<br />
-        <br />
-        <br />
-        To set the starting nametable, change bit 0 of the PPU control register at $2000. Clearing it to
-        0 will put nametables 0 and 2 on the left side of the screen with 1 and 3 to the right. Setting
-        it to 1 will put 1 and 3 on the left, and 0 and 2 on the right.<br />
-        <br />
-        This sample code has the same scroll incrementing, but swaps the nametables at the same time the
-        scroll wraps from 255 to 0. Instead of the background jumping it continuously scrolls from one
-        nametable to the next. When the scroll wraps again the nametables are swapped again and the
-        scrolling keeps going.<br />
-        <pre>NMI:<br><br>  INC scroll       ; add one to our scroll variable each frame
-NTSwapCheck:
-LDA scroll       ; check if the scroll just wrapped from 255 to 0
-BNE NTSwapCheckDone
-
-NTSwap:
-LDA nametable    ; load current nametable number (0 or 1)
-EOR #$01         ; exclusive OR of bit 0 will flip that bit
-STA nametable    ; so if nametable was 0, now 1
-     ;    if nametable was 1, now 0
-NTSwapCheckDone:<br><br>  LDA #$00
-STA $2003       
-LDA #$02
-STA $4014       ; sprite DMA from $0200
-
-; run other game graphics updating code here<br><br>  LDA #$00
-STA $2006        ; clean up PPU address registers
-STA $2006
-
-LDA scroll
-STA $2005        ; write the horizontal scroll count register<br><br>  LDA #$00         ; no vertical scrolling
-STA $2005
-
-;;This is the PPU clean up section, so rendering the next frame starts properly.
-LDA #%10010000   ; enable NMI, sprites from Pattern Table 0, background from Pattern Table 1
-ORA nametable    ; select correct nametable for bit 0
-STA $2000
-
-LDA #%00011110   ; enable sprites, enable background, no clipping on left side
-STA $2001
-
-; run normal game engine code here
-; reading from controllers, etc
-
-RTI              ; return from interrupt</pre>
-        <br />
-        The full code and compiled .NES file is available from the download link at the bottom of this
-        tutorial. scrolling2.asm includes everything up to this point.<br /><br /><br />
-        <span class="Apple-style-span" style="font-size: medium"><b>Drawing New Columns</b></span
-        ><br />
-        For just two screens of graphics the code above is fine. Games like Super Dodgeball use this
-        method. Both nametables are filled and scrolled between. For games like SMB where the levels are
-        wider than two screens some new background data will have to be inserted. The solution is to draw
-        a new vertical column of tiles somewhere off the visible screen, before it is scrolled into the
-        visible area. As long as the new column is drawn ahead of the visible area, calculated by the
-        current scroll and nametable, it will appear continuous. The tricky part is figuring out which
-        column to draw, and where it is to be placed. If we always use the opposite nametable and the
-        same scroll point we will be drawing the column that is about to come on screen.<br />
-        <br />
+          data-dl-uid="342"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="343" data-dl-original="true" data-dl-translated="true" />
+        折り返したときに左側の名前テーブルを入れ替えて、名前テーブル1を表示します。<br
+          data-dl-uid="344"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="345" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="346" data-dl-original="true" data-dl-translated="true" />
+        スタートするネームテーブルを設定するには、2000ドルのPPUコントロールレジスタのビット0を変更します。これを0にクリアすると、ネームテーブル0と2が画面の左側に、1と3が右側に表示されます。1に設定すると、1と3が左側に、0と2が右側に配置されます。<br
+          data-dl-uid="347"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="348" data-dl-original="true" data-dl-translated="true" />
+        このサンプルコードも同じようにスクロールが増加しますが、スクロールが255から0にラップするのと同時にネームテーブルが入れ替わります。スクロールが再びラップされると、ネームテーブルが再びスワップされ、スクロールが継続されます。<br
+          data-dl-uid="349"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre
+          data-dl-uid="350"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >NMI:<br data-dl-uid="351" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="352" data-dl-original="true" data-dl-translated="true"> INC scroll ; フレームごとにscroll変数に1加算 NTSwapCheck: LDA scroll ; スクロールが255から0にラップしたかチェック BNE NTSwapCheckDone NTSwap: LDA nametable ; 現在のnametable番号をロード (0 or 1) EOR #$01 ; bit 0の排他的論理和でそのbitを反転 STA nametable ; so if nametable was 0, now 1 ; if nametable was 1, now 0 NTSwapCheckDone.NTSwapCheckDone:<br data-dl-uid="353" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="354" data-dl-original="true" data-dl-translated="true"> LDA #$00 STA $2003 LDA #$02 STA $4014 ; スプライトDMA from $0200 ; ここで他のゲームグラフィックス更新コードを実行<br data-dl-uid="355" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="356" data-dl-original="true" data-dl-translated="true"> LDA #$00 STA $2006 ; PPUアドレスレジスタのクリーンアップ STA $2006 LDA scroll STA $2005 ; 水平スクロールカウントレジスタの書き込み<br data-dl-uid="357" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="358" data-dl-original="true" data-dl-translated="true"> LDA #$00 ; 縦スクロールなし STA $2005 ;;次のフレームを正しく描画開始するために、このセクションは、 PPUクリーンアップセクション</pre>
+        である。
+        <pre data-dl-uid="350" data-dl-translated="true">
+LDA #%10010000 ; NMIを有効にする、パターンテーブル0からスプライト、パターンテーブル1から背景 ORA nametable ; ビット0に正しい名前テーブルを選択 STA $2000 LDA #%00011110 ; スプライトを有効にする、背景を有効にする、左側でクリップしない STA $2001 ; ここで通常のゲームエンジンコードを実行 ; コントローラからの読み込みなど RTI ; 割り込みから復帰</pre
+        >
+        する <br data-dl-uid="359" data-dl-original="true" data-dl-translated="true" />
+        完全なコードとコンパイルされた.NESファイルは、このチュートリアルの一番下にあるダウンロードリンクから入手できます。scrolling2.asmにはここまでのものがすべて含まれています。<br
+          data-dl-uid="360"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="361" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="362"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="363"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="364" data-dl-original="true" data-dl-translated="true"
+            >新しい列の描画</b
+          ></span
+        ><br data-dl-uid="365" data-dl-original="true" data-dl-translated="true" />
+        2画面だけのグラフィックの場合、上のコードで十分です。Super
+        Dodgeballのようなゲームでは、この方法を使います。両方の名前テーブルが埋め尽くされ、その間でスクロールされます。SMBのように、レベルが2画面より広いゲームでは、新しい背景データを挿入する必要があります。解決策は、タイルの新しい縦列を、可視エリアにスクロールされる前に、可視スクリーンから離れた場所に描くことです。新しい列が、現在のスクロールと名前テーブルによって計算された可視領域より先に描かれている限り、それは連続的に見えるでしょう。やっかいなのは、どの列を描くか、そしてそれをどこに配置するかを見極めることです。もし、常に反対のnametableと同じスクロールポイントを使用すると、これから画面に出てくる列を描くことになる。<br
+          data-dl-uid="366"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="367" data-dl-original="true" data-dl-translated="true" />
         <img
           src="img/ntE.png"
           original-src="http://www.nespowerpak.com/nesasm/ntE.png"
           show-src="img/ntE.png"
-        /><br />
-        <br /><br />
-        &gt;<b>When to Draw</b><br />
-        We will draw a new column anytime the scroll register becomes a multiple of 8, meaning the scroll
-        is aligned to the tiles. Some bit masking and testing can calculate when this happens. First any
-        part of the scroll not 0 to 7 is thrown away. Then if the result equals 0 the scroll count is a
-        multiple of 8.<br />
-        <pre>
-  LDA scroll
-AND #%00000111     ; throw away higher bits
-BEQ DrawNewColumn  ; see if lower bits = 0</pre
+          data-dl-uid="368"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="369" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="370" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="371"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        &gt;いつ<b data-dl-uid="372" data-dl-original="true" data-dl-translated="true">描画</b>するか<br
+          data-dl-uid="373"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        スクロールレジスタが8の倍数になったらいつでも新しい列を描画します。つまり、スクロールがタイルに整列していることを意味します。ビットマスキングとテストによって、このタイミングを計算することができます。まず、0から7でないスクロールの部分が捨てられます。その結果が0であれば、スクロールのカウントは8の倍数である。<br
+          data-dl-uid="374"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="375" data-dl-original="true" data-dl-translated="true">
+ LDA scroll AND #%00000111 ; 上位ビットを捨てる BEQ DrawNewColumn ; 下位ビット = 0</pre
         >
-        <br />
-        <b>Where to Draw</b><br />
-        Now that we know when to draw, we need to calculate the starting PPU address of the new column.
-        The scroll register counts in pixels, but we want to count in tiles for which column to draw.
-        Each tile is 8 pixels wide, so we divide the scroll by 8 to get the tile number. That number is
-        the low bits of the address.<br /><br /><br />
-        <pre>
-  LDA scroll
-LSR A
-LSR A
-LSR A            ; shift right 3 times = divide by 8
-STA columnLow    ; $00 to $1F, screen is 32 tiles wide</pre
+        かどうかを見る <br data-dl-uid="376" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="377" data-dl-original="true" data-dl-translated="true">どこに描画するか</b
+        ><br data-dl-uid="378" data-dl-original="true" data-dl-translated="true" />
+        描画のタイミングがわかったので、新しい列の開始PPUアドレスを計算する必要がある。
+        スクロールレジスタはピクセル単位でカウントするが、どの列を描画するかはタイル単位でカウントしたい。
+        1タイルは8ピクセル幅なので、スクロールを8で割ってタイル番号を得る。その数値がアドレスの下位ビットとなる。<br
+          data-dl-uid="379"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="380" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="381"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="382" data-dl-original="true" data-dl-translated="true">
+ LDA scroll LSR A LSR A ; 右に3回シフト = 8で割る STA columnLow ; $00 to $1F, 画面は32タイル幅</pre
         >
-        The high bits of the address will come from the current nametable. First the low bit is inverted,
-        to get the off screen nametable number. Then the number is shifted up and added to the base
-        address.<br />
-        <pre>
-  LDA nametable
-EOR #$01          ; invert low bit, A = $00 or $01
-ASL A             ; shift up, A = $00 or $02
-ASL A             ; $00 or $04
-CLC
-ADC #$20          ; add high byte of nametable base address ($2000)
-STA columnHigh    ; now address = $20 or $24 for nametable 0 or 1</pre
+        アドレスの上位ビットは、現在のネームテーブルから取得することになります。まず、ロービットが反転され、画面外のネームテーブルの番号が得られます。次に、その番号をシフトアップしてベースアドレスに加算します。<br
+          data-dl-uid="383"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="384" data-dl-original="true" data-dl-translated="true">
+ LDA nametable EOR #$01 ; low bitを反転、A = $00 or $01 ASL A ; shift up, A = $00 or $02 ASL A ; $00 or $04 CLC ADC #$20 ; add high byte of nametable base address ($2000) STA columnHigh ; now address = $20 or $24 for nametable 0 or 1</pre
         >
-        Now the scroll count and nametable have been used to make the full column address to start
-        copying new background data. It will be at the top of the nametable that is off screen. As the
-        scroll and nametable are changed, that calculation will still give the correct starting
-        address.<br />
-        <br />
-        <b>How to Draw</b><br />
-        Previously when we have been copying data to the background the PPU is set to auto increment the
-        address by 1. That helps with the copying because a whole row of data can be copied while only
-        writing the PPU address once. Incrementing by 1 goes to the next horizontal tile. In this case we
-        want to go to the next vertical tile because we are copying a column instead of a row. We want it
-        to increment by 32 which will jump down instead of across. There are 32 tiles per row, so adding
-        32 will always go down to the next row in the same column. The PPU has an increment 32 mode, set
-        using bit 2 in the PPU control register at $2000. When bit 2 is set to 0 the increment mode is
-        +1. When bit 2 is set to 1 the increment mode is +32. By setting the increment mode to +32 and
-        copying 30 bytes of background tiles we can draw one column at a time. <br />
-        <pre>
-DrawColumn:
-LDA #%00000100        ; set to increment +32 mode, don't care about other bits
-STA $2000
-
-LDA $2002             ; read PPU status to reset the high/low latch
-LDA columnHigh
-STA $2006             ; write the high byte of column address
-LDA columnLow
-STA $2006             ; write the low byte of column address
-LDX #$1E              ; copy 30 bytes
-LDY #$00
-DrawColumnLoop:
-LDA columnData, y
-STA $2007
-INY
-DEX
-BNE DrawColumnLoop</pre
+        ここでスクロールカウントとネームテーブルを使って新しい背景データをコピーし始めるフルカラムアドレスが作成されている。これは、画面外にあるnametableの最上部に位置することになります。スクロールとネームテーブルが変わっても、この計算で正しい開始アドレスが得られます。<br
+          data-dl-uid="385"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="386" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="387" data-dl-original="true" data-dl-translated="true">描画方法</b
+        ><br data-dl-uid="388" data-dl-original="true" data-dl-translated="true" />
+        以前は、データを背景にコピーするとき、PPUはアドレスを1ずつ自動インクリメントするように設定されていました。1つ増やすと、次の水平方向のタイルに移動する。この場合、行ではなく列をコピーしているので、次の垂直方向のタイルに移動したい。この場合、横方向ではなく、下方向にジャンプするように、32ずつインクリメントします。1行に32枚のタイルがあるので、32を足せば常に同じ列の次の行に移動します。PPUにはインクリメント32モードがあり、2000ドルのPPUコントロールレジスタのビット2を使って設定します。ビット2が0に設定されると、インクリメントモードは+1である。ビット2が1に設定されると、インクリメントモードは+32になります。インクリメントモードを+32に設定し、30バイトの背景タイルをコピーすることで、一度に1列を描画することができる。
+        <br data-dl-uid="389" data-dl-original="true" data-dl-translated="true" />
+        <pre data-dl-uid="390" data-dl-original="true" data-dl-translated="true">
+DrawColumn: LDA #%00000100 ; 増分値+32モードに設定、他のビットは気にしない STA $2000 LDA $2002 ; PPUの状態を読み取り、ハイ／ローラッチをリセット LDA columnHigh STA $2006 ; 列アドレスの上位バイトを書き込み LDA columnLow STA $2006 ; 列アドレスの下位バイトを書き込み LDX #$1E ; 30バイトコピー LDY #$00 DrawColumnLoop:
+LDA columnData, y STA $2007 INY DEX BNE DrawColumnLoop</pre
         >
-        <br />
-        By using the when/where/how we can draw a new column of data off screen before it becomes
-        visible. The full code and compiled .NES file is available from the download link at the bottom
-        of this tutorial. scrolling3.asm includes everything up to this point. It will be best to watch
-        in an emulator where you can see everything that is off screen. First open the scrolling3.nes
-        file in the FCEUXDSP emulator. Then choose "Name Table Viewer..." from the "Tools" menu. Reset
-        the emulator and watch the new columns being drawn off the visible screen area. <br /><br />
-        <br />
-        <b>Drawing Real Background Data</b><br />
-        The last example drew new columns, but it wasn't any real data. This example adds another counter
-        to keep track of how far along into the level a player is. By incrementing this counter every
-        time a new column is drawn the correct next column is easy to find. The DrawNewColumn function
-        has been updated to use the counter to load real background data. It can also be used at the
-        beginning of the game initialization to populate the starting nametable data instead of using the
-        fill loops.<br />
-        <br />
-        The full code and compiled .NES file is available from the download link at the bottom of this
-        tutorial. scrolling4.asm includes 4 screens (128 columns) of real background ripped from SMB.
-        <br /><br /><br />
-        <span class="Apple-style-span" style="font-size: medium"><b>Updating the Attributes</b></span
-        ><br />
-        The final piece of the scrolling puzzle is the attribute table. Updating it is the same process
-        as the background, where the attributes are updated while they are off screen. Again the scroll
-        and nametable registers will be used to calculate the correct attribute bytes to update. Each
-        attribute byte covers a 4x4 tile area. 4 tiles wide is 32 pixels, so the attributes must be
-        updated anytime the scroll register is a multiple of 32. The column numbers already calculated
-        could be used instead of the scroll variables to do the calculations.<br />
-        <pre>
-  LDA scroll
-AND #%00011111     ; check for multiple of 32
-BEQ NewAttrib      ; if low 5 bits = 0, time to write new attribute bytes</pre
+        <br data-dl-uid="391" data-dl-original="true" data-dl-translated="true" />
+        when/where/howを使用することで、新しい列のデータが表示される前に画面外に描画することができます。完全なコードとコンパイルされた.NESファイルは、このチュートリアルの一番下にあるダウンロードリンクから入手できます。scrolling3.asmには、ここまでのすべてが含まれています。画面外にあるものをすべて見ることができるエミュレータで見るのが一番でしょう。まず、FCEUXDSPエミュレータでscrolling3.nesファイルを開いてください。次に「ツール」メニューから「ネームテーブルビューア」を選択します。エミュレータをリセットして、新しい列が画面外に描画されるのを確認します。
+        <br data-dl-uid="392" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="393"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="394" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="395" data-dl-original="true" data-dl-translated="true">実際の背景データの描画</b
+        ><br data-dl-uid="396" data-dl-original="true" data-dl-translated="true" />
+        先ほどの例では、新しい列を描画しましたが、それは実際のデータではありませんでした。この例では、プレーヤーがどの程度レベルまで進んでいるかを追跡するために、別のカウンターを追加しています。新しい列が描画されるたびにこのカウンターをインクリメントすることで、正しい次の列を簡単に見つけることができます。DrawNewColumn関数は、実際の背景データをロードするためにカウンターを使用するように更新されました。また、ゲーム初期化の最初に、fillループを使用する代わりに、開始時の名前テーブルのデータを入力するために使用することができます。<br
+          data-dl-uid="397"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="398" data-dl-original="true" data-dl-translated="true" />
+        scrolling4.asmには、SMBから読み込まれた4画面（128カラム）のリアルな背景が含まれています。
+        <br data-dl-uid="399" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="400"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="401" data-dl-original="true" data-dl-translated="true" />
+        <span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="402"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="403" data-dl-original="true" data-dl-translated="true">属性の更新</b></span
+        ><br data-dl-uid="404" data-dl-original="true" data-dl-translated="true" />
+        scrolling
+        のパズルの最後のピースは、属性テーブルです。この更新は背景と同じ処理で、画面の外にいる間に属性が更新される。ここでも、スクロールレジスタとネームテーブルレジスタを使用して、更新する正しい属性バイトを計算します。各アトリビュートバイトは4x4タイルの領域をカバーします。4タイルの幅は32ピクセルなので、スクロールレジスタが32の倍数であればいつでも属性を更新する必要があります。スクロール変数の代わりに、すでに計算されている列番号を使用して計算を行うことができます。<br
+          data-dl-uid="405"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="406" data-dl-original="true" data-dl-translated="true">
+ LDA scroll AND #%00011111 ; 32の倍数をチェック BEQ NewAttrib ; if low 5 bit = 0, time to write new attribute bytes</pre
         >
-        Only 8 attribute bytes will need to be changed each time. However they are not sequential, so the
-        PPU increment +1 or +32 modes will not work. The PPU address needs to be changed for every
-        attribute byte updated. The starting address is the base attribute table at $20C0. Like the
-        background address the nametable bit is shifted up and added in. Then the scroll register is
-        divided by 32 to get the attribute byte offset. All that is calculated together to find the PPU
-        address of the first attribute byte. After that 8 is added to the address for each of the next
-        bytes.<br />
-        <pre>
-  LDA nametable
-EOR #$01          ; invert low bit, A = $00 or $01
-ASL A             ; shift up, A = $00 or $02
-ASL A             ; $00 or $04
-CLC
-ADC #$20          ; add high byte of attribute base address ($20C0)
-STA columnHigh    ; now address = $20 or $24 for nametable 0 or 1
-
-LDA scroll
-LSR A
-LSR A
-LSR A
-LSR A
-LSR A
-CLC
-ADC #$C0
-STA columnLow     ; attribute base + scroll / 32</pre
+        毎回変更する必要のあるアトリビュートバイトは8個だけです。しかし、これらはシーケンシャルではないので、PPUインクリメント+1や+32モードは機能しない。PPUアドレスはアトリビュートバイトを更新するごとに変更する必要があります。開始アドレスは、$20C0にあるベース属性テーブルです。背景アドレスと同様に、ネームテーブルのビットがシフトアップされて追加されます。次に、スクロール
+        レジスタを32で割って、アトリビュート バイト
+        オフセットを取得します。これらすべてを合わせて計算し、最初のアトリビュート バイトの PPU
+        アドレスを求めます。その後、次のバイトのアドレスに8が追加されます。<br
+          data-dl-uid="407"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <pre data-dl-uid="408" data-dl-original="true" data-dl-translated="true">
+  LDA nametable EOR #$01 ;下位ビットを反転、A = $00 or $01 ASL A ;シフトアップ、A = $00 or $02 ASL A ; $00 or $04 CLC ADC #$20 ; 属性ベースアドレスの上位バイト ($20C0) STA columnHigh .を追加します。LDA scroll LSR A LSR A LSR A CLC ADC #$C0 STA columnLow ; 属性ベース + scroll / 32</pre
         >
-        The full code and compiled .NES file is available from the download link at the bottom of this
-        tutorial. scrolling5.asm has the same incrementing scroll, but now draws the new column and
-        attribute bytes. Use the Name Table Viewer again to check out the attributes being updated. You
-        can see the attribute update change the color of the off screen clouds before that column of
-        tiles is changed. The same thing is why you see graphical glitches on the sides of SMB3 while it
-        is scrolling. To use this in your own game you will need to expand columnNumber to a bigger
-        value.<br /><br /><br /><span class="Apple-style-span" style="font-size: medium"
-          ><badvanced></badvanced></span
-        ><br />
-        Once you have understood everything here, there are some more advanced concepts to check out:<br />
-        <br />
-        <b>Meta Tiles</b> - This idea is to store your backgrounds as bigger blocks instead of individual
-        tiles. Things like the question blocks would be stored as one byte in the ROM and then decoded
-        into the 4 tiles when it is being drawn. Mostly this saves huge amounts of data space and could
-        make updating attributes easier.<br />
-        <br />
-        <b>Buffers</b> - A section of RAM can be reserved to act as a buffer for the data to draw to the
-        PPU later. Outside of vblank where the is more processing time the next graphics updates would be
-        calculated and stored in a buffer. Then during vblank those buffers can be dumped right to the
-        PPU, saving time. <br />
-        <br />
-        <b>Compression</b> - Packing the background data into simple compression formats like RLE can
-        save even more data space. Combine that with meta tiles and buffers to have a full scrolling
-        engine.
-        <br />
-        <br />
-        <span class="Apple-style-span" style="font-size: medium"><b>Putting It All Together</b></span
-        ><br />
-        Download and unzip the
+        フルコードとコンパイル済み.scrolling5.asmは同じインクリメントスクロールですが、新しいカラムとアトリビュートバイトを描画するようになりました。ネームテーブルビューアを再度使用して、更新される属性を確認します。属性の更新により、タイルのその列が変更される前に、画面外の雲の色が変更されるのを見ることができます。SMB3でスクロール中に横のグラフィックに不具合が出るのも、これと同じ理由です。これを自分のゲームで使うには、columnNumberをより大きな値に拡張する必要があります。<br
+          data-dl-uid="409"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="410" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="411"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="412"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><badvanced
+            data-dl-uid="413"
+            data-dl-original="true"
+            data-dl-translated="true"
+          ></badvanced></span
+        ><br data-dl-uid="414" data-dl-original="true" data-dl-translated="true" />
+        ここですべてを理解したら、さらに高度なコンセプトをチェックしてみましょう。<br
+          data-dl-uid="415"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="416" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="417" data-dl-original="true" data-dl-translated="true">Meta Tiles</b>-
+        背景を個々のタイルではなく、大きなブロックとして保存するアイデアです。問題のブロックのようなものは、ROMに1バイトとして格納され、それが描画されているときに4つのタイルにデコードされます。ほとんどの場合、これは膨大な量のデータ領域を節約し、アトリビュートの更新を容易にすることができます。<br
+          data-dl-uid="418"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="419" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="420" data-dl-original="true" data-dl-translated="true">バッファ</b>-
+        RAMのセクションは、後でPPUに描画するためのデータのバッファとして機能するように予約することができます。vblankの外では、処理時間が長いため、次のグラフィックの更新は計算されてバッファに格納されます。そして、vblankの間、これらのバッファはPPUに右ダンプすることができ、時間を節約することができます。
+        <br data-dl-uid="421" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="422" data-dl-original="true" data-dl-translated="true" />
+        <b data-dl-uid="423" data-dl-original="true" data-dl-translated="true">圧縮</b>-
+        バックグラウンドデータをRLEのような単純な圧縮フォーマットにパックすることで、さらにデータ容量を節約することができます。これをメタタイルやバッファと組み合わせると、フルスクロールエンジンになります。
+        <br data-dl-uid="424" data-dl-original="true" data-dl-translated="true" />
+        <br data-dl-uid="425" data-dl-original="true" data-dl-translated="true" />
+        <span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="426"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="427" data-dl-original="true" data-dl-translated="true"
+            >すべてをまとめる</b
+          ></span
+        ><br data-dl-uid="428" data-dl-original="true" data-dl-translated="true" />
         <a
           href="scraper/files/scrolling.zip"
           target="_blank"
           original-href="http://www.nespowerpak.com/nesasm/scrolling.zip"
-          >scrolling.zip</a
-        >
-        sample files. Each of them adds a small step, so go through them one at a time. Try expanding the
-        background data to add more columns, making the scroll speed variable, or making the scrolling
-        controlable.
+          data-dl-uid="429"
+          data-dl-original="true"
+          data-dl-translated="true"
+          >scrolling.zipの</a
+        >サンプルファイルをダウンロードして解凍してください。それぞれ小さなステップを追加しているので、一つずつ見ていってください。背景データを拡張して列を増やしたり、スクロール速度を可変にしたり、スクロールを制御できるようにしたりしてみてください。
       </div>
       <div class="mdl-card__actions mdl-card--border">
         <a
           class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
           href="#advanced_tutorial-toc"
           data-upgraded=",MaterialButton,MaterialRipple"
+          data-dl-uid="430"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          Back to Table of Contents
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+          目次へ移動
+          <span
+            class="mdl-button__ripple-container"
+            data-dl-uid="431"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><span
+              class="mdl-ripple"
+              data-dl-uid="432"
+              data-dl-original="true"
+              data-dl-translated="true"
+            ></span></span
         ></a>
         <a
           class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
           href="javascript:doCommentToggle('advanced_tutorial-2__comments');"
           data-upgraded=",MaterialButton,MaterialRipple"
+          data-dl-uid="433"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          Toggle Comments
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+          トグルコメント
+          <span
+            class="mdl-button__ripple-container"
+            data-dl-uid="434"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><span
+              class="mdl-ripple"
+              data-dl-uid="435"
+              data-dl-original="true"
+              data-dl-translated="true"
+            ></span></span
         ></a>
-        <div style="float: right">
+        <div style="float: right" data-dl-uid="436" data-dl-original="true" data-dl-translated="true">
           <a
             class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
             href="http://nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=36958"
             target="_blank"
             data-upgraded=",MaterialButton,MaterialRipple"
-          >
-            Original Article
-            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+            data-dl-uid="437"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >元記事<span
+              class="mdl-button__ripple-container"
+              data-dl-uid="438"
+              data-dl-original="true"
+              data-dl-translated="true"
+              ><span
+                class="mdl-ripple"
+                data-dl-uid="439"
+                data-dl-original="true"
+                data-dl-translated="true"
+              ></span></span
           ></a>
         </div>
       </div>
     </div>
     <div class="tutorialCard mdl-card mdl-shadow--2dp" id="advanced_tutorial-3">
       <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">Advanced Nerdy Nights #4: Sprite 0 hit for a status bar</h2>
+        <h2
+          class="mdl-card__title-text"
+          data-dl-uid="440"
+          data-dl-original="true"
+          data-dl-translated="true"
+        >
+          Advanced Nerdy Nights #4：ステータスバーのためのスプライト0ヒット
+        </h2>
       </div>
-      <div class="mdl-card__supporting-text">
-        <b>This Week:</b> After scrolling this tutorial should be pretty simple. Sprite 0 has a special
-        PPU flag associated with it. Here it will be used to do split screen scrolling to enable a static
-        status bar on the top of the screen.<br />
-        <br /><br /><br /><span class="Apple-style-span" style="font-size: medium"
-          ><b>Sprite 0 Hit Flag</b></span
-        ><br />
-        Sprite 0 has a special flag in the PPU status register at bit 6. When a non transparent pixel of
-        sprite 0 overlaps a non transparent pixel of the background, the flag is set. In the SMB example,
-        sprite 0 is placed at the bottom of the coin icon. That is one part of the status bar that does
-        not move.
-        <div>
-          <br />
+      <div
+        class="mdl-card__supporting-text"
+        data-dl-uid="441"
+        data-dl-original="true"
+        data-dl-translated="true"
+      >
+        <b data-dl-uid="442" data-dl-original="true" data-dl-translated="true">今週は</b
+        >スクロールした後、このチュートリアルはかなり簡単なはずです。スプライト0は、それに関連する特別なPPUフラグを持っています。ここでは、画面上部に静的なステータスバーを有効にするために、分割画面のスクロールを行うために使用されます。<br
+          data-dl-uid="443"
+          data-dl-original="true"
+          data-dl-translated="true"
+        />
+        <br data-dl-uid="444" data-dl-original="true" data-dl-translated="true" /><br
+          data-dl-uid="445"
+          data-dl-original="true"
+          data-dl-translated="true"
+        /><br data-dl-uid="446" data-dl-original="true" data-dl-translated="true" /><span
+          class="Apple-style-span"
+          style="font-size: medium"
+          data-dl-uid="447"
+          data-dl-original="true"
+          data-dl-translated="true"
+          ><b data-dl-uid="448" data-dl-original="true" data-dl-translated="true"
+            >スプライト0ヒットフラグ</b
+          ></span
+        ><br data-dl-uid="449" data-dl-original="true" data-dl-translated="true" />
+        スプライト0は、PPUステータスレジスタのビット6に特別なフラグを持っています。スプライト0の非透過ピクセルが背景の非透過ピクセルに重なると、このフラグがセットされます。SMBの例では、スプライト0はコインアイコンの下に配置されています。これは、ステータス・バーの動かない部分の一つです。
+        <div data-dl-uid="450" data-dl-original="true" data-dl-translated="true">
+          <br data-dl-uid="451" data-dl-original="true" data-dl-translated="true" />
           <img
             src="img/sprite0.png"
             original-src="http://www.nespowerpak.com/nesasm/sprite0.png"
             show-src="img/sprite0.png"
-          />&nbsp;
-          <div>
-            <br />
-            In our example we first set the scroll registers to 0 for the static status bar. The
-            nametable is also set to 0. That makes sure that the background and sprite 0 will overlap in
-            the correct place.<br />
-            <br /><br />
-            <pre>NMI:<br><br>  ; all graphics updating code goes here<br><br>  LDA #$00
-STA $2006        ; clean up PPU address registers
-STA $2006
-
-LDA #$00         ; start with no scroll for status bar
-STA $2005
-STA $2005
-
-LDA #%10010000   ; enable NMI, sprites from Pattern Table 0, background from Pattern Table 1
-STA $2000        ; start with nametable = 0 for status bar<br><br>  LDA #%00011110   ; enable sprites, enable background, no clipping on left side
-STA $2001</pre>
-            Next we make sure the sprite 0 hit flag is clear, to avoid it being tripped from the previous
-            frame. The flag is cleared at the end of vblank, so once it equals 0 you know the next frame
-            has started.<br />
-            <br /><br />
-            <pre>
-WaitNotSprite0:
-lda $2002
-and #%01000000
-bne WaitNotSprite0   ; wait until sprite 0 not hit</pre
+            data-dl-uid="452"
+            data-dl-original="true"
+            data-dl-translated="true"
+          />
+          <div data-dl-uid="453" data-dl-original="true" data-dl-translated="true">
+            <br data-dl-uid="454" data-dl-original="true" data-dl-translated="true" />
+            この例では、まず、静的なステータスバーのために、スクロールレジスタを0に設定します。これにより、背景とスプライト0が正しい位置で重なり合うようになります。<br
+              data-dl-uid="455"
+              data-dl-original="true"
+              data-dl-translated="true"
+            />
+            <br data-dl-uid="456" data-dl-original="true" data-dl-translated="true" /><br
+              data-dl-uid="457"
+              data-dl-original="true"
+              data-dl-translated="true"
+            />
+            <pre
+              data-dl-uid="458"
+              data-dl-original="true"
+              data-dl-translated="true"
+            >NMIです。<br data-dl-uid="459" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="460" data-dl-original="true" data-dl-translated="true"> ; すべてのグラフィックス更新コードはここに行く<br data-dl-uid="461" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="462" data-dl-original="true" data-dl-translated="true"> LDA #$00 STA $2006 ; PPUアドレスレジスタのクリーンアップ STA $2006 LDA #$00 ; ステータスバーのスクロールなしで開始 STA $2005 STA $2005 LDA #%10010000 ; NMIを有効にしてパターン表0からスプライト、パターン表1から背景 STA $2000 ;start with nametable = 0 for status bar<br data-dl-uid="463" data-dl-original="true" data-dl-translated="true"><br data-dl-uid="464" data-dl-original="true" data-dl-translated="true"> LDA #%00011110 ; enable sprites, enable background, no clipping on left side STA $2001</pre>
+            次に、スプライト0ヒットフラグをクリアして、前のフレームからトリッピングされないようにしています。このフラグはvblankの終了時にクリアされるので、0になれば次のフレームが開始されたことが分かります。<br
+              data-dl-uid="465"
+              data-dl-original="true"
+              data-dl-translated="true"
+            />
+            <br data-dl-uid="466" data-dl-original="true" data-dl-translated="true" /><br
+              data-dl-uid="467"
+              data-dl-original="true"
+              data-dl-translated="true"
+            />
+            <pre data-dl-uid="468" data-dl-original="true" data-dl-translated="true">
+WaitNotSprite0: lda $2002 and #%01000000 bne WaitNotSprite0 ; スプライト0がヒットしないまで</pre
             >
-            <br />
-            Now we wait until the sprite 0 is hit. How long this takes depends on how far down the screen
-            your sprite 0 is placed.<br />
-            <br /><br />
-            <pre>
-WaitSprite0:
-lda $2002
-and #%01000000
-beq WaitSprite0      ; wait until sprite 0 is hit</pre
+            待機する。 <br data-dl-uid="469" data-dl-original="true" data-dl-translated="true" />
+            今度は、スプライト0がヒットするまで待ちます。この時間は、スプライト0が画面のどのあたりに配置されているかで決まります。<br
+              data-dl-uid="470"
+              data-dl-original="true"
+              data-dl-translated="true"
+            />
+            <br data-dl-uid="471" data-dl-original="true" data-dl-translated="true" /><br
+              data-dl-uid="472"
+              data-dl-original="true"
+              data-dl-translated="true"
+            />
+            <pre data-dl-uid="473" data-dl-original="true" data-dl-translated="true">
+WaitSprite0: lda $2002 and #%01000000 beq WaitSprite0 ; スプライト0</pre
             >
-            <br />
-            When that loop finishes, the PPU is drawing the first pixels of sprite 0 that overlap pixels
-            on the background. We add a small wait loop so the rest of the status bar is drawn, and then
-            change the scroll registers. The rest of the screen down is drawn using those settings.<br /><br /><br />
-            <pre>
-  ldx #$10
-WaitScanline:
-dex
-bne WaitScanline
-
-LDA scroll
-STA $2005        ; write the horizontal scroll count register
-LDA #$00         ; no vertical scrolling
-STA $2005
-
-LDA #%10010000   ; enable NMI, sprites from Pattern Table 0, background from Pattern Table 1
-ORA nametable    ; select correct nametable for bit 0
-STA $2000</pre
+            がヒットするまで待つ。
+            <br data-dl-uid="474" data-dl-original="true" data-dl-translated="true" />
+            このループが終了すると、PPUは背景のピクセルに重なるスプライト0の最初のピクセルを描画しています。ステータスバーの残りが描画されるように小さな待機ループを追加し、スクロールレジスタを変更します。画面下の残りの部分は、これらの設定を使用して描画されます。<br
+              data-dl-uid="475"
+              data-dl-original="true"
+              data-dl-translated="true"
+            /><br data-dl-uid="476" data-dl-original="true" data-dl-translated="true" /><br
+              data-dl-uid="477"
+              data-dl-original="true"
+              data-dl-translated="true"
+            />
+            <pre data-dl-uid="478" data-dl-original="true" data-dl-translated="true">
+ ldx #$10 WaitScanline: dex bne WaitScanline LDA scroll STA $2005 ; 水平スクロールカウントレジスタの書き込み LDA #$00 ; 垂直スクロールなし STA $2005 LDA #%10010000 ; 有効NMI、パターンテーブル0からスプライト、パターンテーブル1から背景 ORA nametable ; ビット0に対して正しいネームテーブルを選択 STA $2000</pre
             >
-            <br />
-            So the order is:<br />
-            <pre>
-  1 - set scroll to 0 for status bar
-2 - wait for sprite 0 hit = 0
-3 - wait for sprite 0 hit = 1
-4 - delay so scanline finishes drawing
-5 - set scroll for level background</pre
+            <br data-dl-uid="479" data-dl-original="true" data-dl-translated="true" />
+            つまり、順番は<br data-dl-uid="480" data-dl-original="true" data-dl-translated="true" />
+            <pre data-dl-uid="481" data-dl-original="true" data-dl-translated="true">
+ 1 - ステータスバーのスクロールを0に設定 2 - スプライト0ヒット=0を待つ 3 - スプライト0ヒット=1を待つ 4 - スキャンラインが描画を終了するように遅延 5 - レベルバックグラウンドのスクロールを設定</pre
             >
-            <br />
-            The only other change is to make sure your graphics updating code does not draw over the
-            status bar. The previous DrawNewColumn function handles the graphics updates so it has a few
-            small differences. The starting address is increased by $80 to skip the first 4 rows of
-            background. Then the source address is increased by $04 for the same reason.
-            <br /><br /><br /><br /><span class="Apple-style-span" style="font-size: medium"
-              ><b>Putting It All Together</b></span
-            ><br />
-            Download and unzip the
-            <a
+            <br data-dl-uid="482" data-dl-original="true" data-dl-translated="true" />
+            その他の変更点は、グラフィックを更新するコードがステータスバーの上に描画されないようにすることです。以前のDrawNewColumn関数は、グラフィックの更新を処理するため、いくつかの小さな違いがあります。開始アドレスは、背景の最初の4行をスキップするために$80増加します。その後、同じ理由でソースアドレスが$04増加します。
+            <br data-dl-uid="483" data-dl-original="true" data-dl-translated="true" /><br
+              data-dl-uid="484"
+              data-dl-original="true"
+              data-dl-translated="true"
+            /><br data-dl-uid="485" data-dl-original="true" data-dl-translated="true" /><br
+              data-dl-uid="486"
+              data-dl-original="true"
+              data-dl-translated="true"
+            /><span
+              class="Apple-style-span"
+              style="font-size: medium"
+              data-dl-uid="487"
+              data-dl-original="true"
+              data-dl-translated="true"
+              ><b data-dl-uid="488" data-dl-original="true" data-dl-translated="true"
+                >すべてをまとめる</b
+              ></span
+            ><br data-dl-uid="489" data-dl-original="true" data-dl-translated="true" />
+            spr<a
               href="scraper/files/sprite0.zip"
               target="_blank"
               original-href="http://www.nespowerpak.com/nesasm/sprite0.zip"
-              >sprite0.zip</a
-            >
-            sample files. sprite0.asm is the same as the previous scrolling5.asm file plus the changes
-            covered here. This is another good one to watch in an emulator.
+              data-dl-uid="490"
+              data-dl-original="true"
+              data-dl-translated="true"
+              >ite0.zipを</a
+            >ダウンロードして解凍してください。sprite0.asmは、前回のscrolling5.asmと同じものに、今回説明した変更を加えたものです。これもエミュレータで見るのがいいでしょう。
           </div>
         </div>
       </div>
@@ -1279,30 +1913,91 @@ STA $2000</pre
           class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
           href="#advanced_tutorial-toc"
           data-upgraded=",MaterialButton,MaterialRipple"
+          data-dl-uid="491"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          Back to Table of Contents
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+          目次へ移動
+          <span
+            class="mdl-button__ripple-container"
+            data-dl-uid="492"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><span
+              class="mdl-ripple"
+              data-dl-uid="493"
+              data-dl-original="true"
+              data-dl-translated="true"
+            ></span></span
         ></a>
         <a
           class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
           href="javascript:doCommentToggle('advanced_tutorial-3__comments');"
           data-upgraded=",MaterialButton,MaterialRipple"
+          data-dl-uid="494"
+          data-dl-original="true"
+          data-dl-translated="true"
         >
-          Toggle Comments
-          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+          トグルコメント
+          <span
+            class="mdl-button__ripple-container"
+            data-dl-uid="495"
+            data-dl-original="true"
+            data-dl-translated="true"
+            ><span
+              class="mdl-ripple"
+              data-dl-uid="496"
+              data-dl-original="true"
+              data-dl-translated="true"
+            ></span></span
         ></a>
-        <div style="float: right">
+        <div style="float: right" data-dl-uid="497" data-dl-original="true" data-dl-translated="true">
           <a
             class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
             href="http://nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=36969"
             target="_blank"
             data-upgraded=",MaterialButton,MaterialRipple"
-          >
-            Original Article
-            <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span
+            data-dl-uid="498"
+            data-dl-original="true"
+            data-dl-translated="true"
+            >元記事<span
+              class="mdl-button__ripple-container"
+              data-dl-uid="499"
+              data-dl-original="true"
+              data-dl-translated="true"
+              ><span
+                class="mdl-ripple"
+                data-dl-uid="500"
+                data-dl-original="true"
+                data-dl-translated="true"
+              ></span></span
           ></a>
         </div>
       </div>
     </div>
+
+    <img
+      id="sddsExtensionInfoImg"
+      style="
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 32px;
+        height: 32px;
+        z-index: 2147483647;
+      "
+    /><img
+      id="sddsExtensionArrowImg"
+      style="
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 32px;
+        height: 32px;
+        z-index: 2147483647;
+      "
+    />
   </body>
 </html>
